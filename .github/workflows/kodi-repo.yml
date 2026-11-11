@@ -1,0 +1,44 @@
+name: Publish Kodi repo
+
+# Po každém pushi do main sestaví ZIP + addons.xml a nahraje je do větve kodi-repo.
+# Kodi nabídne aktualizaci jen když zvýšíš version v addon.xml.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: src
+
+      - name: Připrav větev kodi-repo
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          mkdir repo && cd repo
+          git init -q -b kodi-repo
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git"
+          if git fetch --depth=1 origin kodi-repo; then
+            git checkout -q -B kodi-repo FETCH_HEAD
+          fi
+
+      - name: Sestav repozitář
+        run: python3 src/tools/kodi_repo.py build --out repo
+
+      - name: Publikuj
+        working-directory: repo
+        run: |
+          git add -A
+          if git diff --cached --quiet; then echo "Beze změn"; exit 0; fi
+          VERSION=$(grep -m1 -o '<addon [^>]*version="[^"]*"' ../src/addon.xml | sed 's/.*version="//;s/"//')
+          git -c user.name="github-actions" -c user.email="actions@users.noreply.github.com" \
+            commit -q -m "Publish ${VERSION}"
+          git push origin kodi-repo
