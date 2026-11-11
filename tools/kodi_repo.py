@@ -89,12 +89,16 @@ def cmd_build(a):
     out.mkdir(parents=True, exist_ok=True)
     z = build_zip(out)
     generate_index(out)
+    (out / ".nojekyll").write_text("", encoding="utf-8")
     print(f"OK: {z.relative_to(out)}  ->  addons.xml, addons.xml.md5")
 
 
 def cmd_repo_addon(a):
-    cred = f"{a.owner}:{a.token}@" if a.token else ""
-    base = f"https://{cred}raw.githubusercontent.com/{a.owner}/{a.repo}/{a.branch}"
+    if a.base:
+        base = a.base.rstrip("/")
+    else:
+        cred = f"{a.owner}:{a.token}@" if a.token else ""
+        base = f"https://{cred}raw.githubusercontent.com/{a.owner}/{a.repo}/{a.branch}"
     xml = f'''<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="{REPO_ID}" name="SCC privátní repozitář" version="{a.version}" provider-name="Jiří">
     <extension point="xbmc.addon.repository" name="SCC privátní repozitář">
@@ -127,6 +131,7 @@ def main():
     r.add_argument("--owner", default="AnrielK")
     r.add_argument("--repo", default="plugin.video.stream-cinema-2")
     r.add_argument("--branch", default="kodi-repo")
+    r.add_argument("--base", default="", help="vlastní základní URL, např. https://anrielk.github.io/plugin.video.stream-cinema-2 (GitHub Pages)")
     r.add_argument("--version", default="1.0.0")
     r.add_argument("--out", default=f"{REPO_ID}-1.0.0.zip")
     r.set_defaults(fn=cmd_repo_addon)
