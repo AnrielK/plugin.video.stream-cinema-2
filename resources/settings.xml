@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <!-- General -->
+    <category label="30010">
+        <setting id="run_at_startup" type="bool" label="32209" default="false"/>
+        <setting id="explicit_content" type="bool" label="30106" default="false"/>
+        <setting id="show_top_navigation" type="bool" label="30138" default="false"/>
+        <setting id="show_main_menu_navigation" type="bool" label="32420" default="true"/>
+        <setting id="show_hidden" type="bool" label="30155" default="true"/>
+        <setting id="lite_mode" type="bool" label="30418" default="false"/>
+        <setting label="30173" type="lsep"/>
+        <setting id="search_history" type="bool" label="30205" default="true"/>
+        <setting id="played_items_history" type="bool" label="30254" default="true"/>
+        <setting id="watched_new" type="bool" label="30160" enable="eq(-1,true)" default="false" />
+        <setting id="watched_new_converted" type="bool" default="false" visible="false" value="eq(-1,true)" />
+        <setting id="auto_playback" type="bool" label="32149" default="true" />
+        <setting id="watch_sync" type="bool" label="32163" default="false" />
+        <setting subsetting="true" id="watch_sync.code" type="text" label="32164" enable="true" visible="eq(-1,true)" />
+        <setting subsetting="true" type="action" label="32165" visible="eq(-2,true)" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=reset-watch-sync-code)"/>
+    </category>
+
+    <!-- Interface -->
+    <category label="30014">
+        <setting id="genres_count" type="slider" label="30140" range="0,1,3" default="2" option="int" />
+        <setting id="show_original_title" type="bool" label="32168" default="false" />
+        <setting id="use_english_title_for_exotic" type="bool" label="30665" default="false" />
+        <setting id="show_year_title" type="bool" label="30021" default="true" />
+        <setting id="compact_stream_picker" type="bool" label="30420" default="false" />
+
+        <setting label="30019" type="lsep"/>
+        <setting id="preferred_language" type="enum" label="30017" values="CZ|SK|EN" default="0" />
+        <setting id="fallback_language" type="enum" label="30018" values="|CZ|SK|EN" default="0" />
+        <setting id="show_language_title" type="bool" label="30020" default="true" />
+        <setting id="switch_language_audio" type="bool" label="30664" default="true" />
+
+        <setting label="30118" type="lsep"/>
+        <setting id="news_limit" type="slider" label="30022" range="1,1,1825" default="365" option="int" />
+        <setting id="news_dubbed_limit" type="slider" label="30023" range="1,1,1825" default="730" option="int" />
+        <setting id="news_subs_limit" type="slider" label="30660" range="1,1,1825" default="450" enable="eq(4,true)" option="int" />
+        <setting id="a_z_threshold" type="enum" label="30119" values="10|20|30" default="0"/>
+        <setting id="page_limit" type="enum" label="30120" values="20|50|100|150|200|250|500" default="1"/>
+        <setting id="show_results_count" type="bool" label="30135" default="true"/>
+        <setting id="show_news_subs" type="bool" label="30659" default="true"/>
+
+        <setting label="30398" type="lsep"/>
+        <setting id="tv_program.show_progress_bar" type="bool" label="32139" default="true"/>
+        <setting id="tv_program.compatible_progress_bar" type="bool" label="32142" default="false"/>
+        <setting id="tv_program.media_type" type="enum" label="32140" lvalues="32141|30200|30201" default="0"/>
+
+        <setting label="32151" type="lsep"/>
+        <setting id="media_rating_overall" type="bool" label="32256" default="true"/>
+        <setting id="media_rating.sort_by_votes" type="bool" label="32162" default="false" enable="eq(-1,false)"/>
+        <setting id="media_rating_priority" type="text" label="30000" enable="false" default="ČSFD > TMDB > Trakt > TVDB > IMDB > Metacritic > Rotten Tomatoes"/>
+        <setting id="media_rating_priority_keys" type="text" label="30000" visible="false" default="csfd,tmdb,trakt,tvdb,imdb,Metacritic,Rotten Tomatoes"/>
+        <setting type="action" label="32159" enable="eq(-3,false)" visible="!eq(-2,ČSFD > TMDB > Trakt > TVDB > IMDB > Metacritic > Rotten Tomatoes)" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=set-rating-priority)"/>
+        <setting type="action" label="32161" enable="eq(-4,false)" visible="eq(-3,ČSFD > TMDB > Trakt > TVDB > IMDB > Metacritic > Rotten Tomatoes)" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=set-rating-priority)"/>
+        <setting type="action" label="32160" enable="eq(-5,false)" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=set-default-rating-priority)"/>
+        <setting type="sep"/>
+    </category>
+
+    <!-- Player -->
+    <category label="32473">
+        <setting id="set_original_audio" type="bool" label="32474" default="false"/>
+        <setting label="32484" type="slider" id="video_cache_memory_size_percent" default="1" range="0,100" option="percent" />
+        <setting label="32490" type="text" id="video_cache_memory_size" enable="false" default="-"/>
+        <setting label="32485" type="text" id="video_cache_memory_size_available" enable="false" default="-"/>
+        <setting label="32482" type="lsep"/>
+        <setting id="external_players.list" label="32483" type="text" enable="false" visible="!eq(0,)" />
+        <setting id="external_players.active" label="32492" type="text" enable="false" visible="!eq(0,)" />
+        <setting label="32475" type="action" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=add-external-player)"/>
+        <setting label="32491" type="action" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=set-active-player)"/>
+        <setting label="32481" type="action" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=remove-external-player)"/>
+        <setting type="sep"/>
+        <setting label="32486" type="action" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=restart)"/>
+        <setting label="32487" type="action" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=shutdown)"/>
+    </category>
+
+    <!-- Streams views -->
+    <category label="30156">
+        <setting id="show_dvhe_streams" type="bool" label="32419" default="true"/>
+        <setting id="show_hevc_streams" type="bool" label="30661" default="true"/>
+		<setting id="show_hdr_streams" type="bool" label="30143" default="true"/>
+        <setting id="show_3d_streams" type="bool" label="30159" default="true"/>
+        <setting id="max_birate_filter" type="bool" label="30157" default="false" enable="gt(1, 0)"/>
+        <setting label="30158" type="slider" id="stream_max_bitrate" range="0,0.1,1000" option="float" />
+        <setting label="30371" type="action" option="close" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=speed-test&amp;settings_id=stream_max_bitrate&amp;id1=2&amp;id2=1&amp;bitrate_text=0)"/>
+        <setting type="sep"/>
+        <setting id="auto_select_stream" type="bool" label="30403" default="false" />
+        <setting id="auto_select_stream.download" type="bool" label="30643" default="false" />
+		<setting id="auto_play_stream" type="bool" label="30666" default="false" />
+        <setting label="30117" type="lsep"/>
+        <setting id="file_size_sort" type="enum" label="30109" lvalues="30110|30111" default="0" />
+        <setting id="show_codec" type="bool" label="30115" default="false"/>
+        <setting id="show_bitrate" type="bool" label="30116" default="true"/>
+        <setting id="show_duration" type="bool" label="30129" default="false"/>
+        <setting id="show_hdr" type="bool" label="30150" enable="eq(-12,true)" default="true"/>
+    </category>
+
+    <!-- Source -->
+    <category label="30011">
+        <setting id="provider.name" type="select" label="30103" lvalues="30104" default="0" />
+        <setting id="provider.username" type="text" label="30101" default="" enable="false" />
+        <setting id="provider.password" label="30102" type="text" default="" option="hidden" enable="false" />
+        <setting id="provider.logged_in" type="bool" default="false" enable="false" visible="false" />
+        <setting id="provider.username_hash" type="text" enable="false" visible="false" />
+        <setting type="action" label="30134" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=set-provider-credentials)"/>
+        <setting label="30000" type="lsep" />
+        <setting id="provider.vip_duration" type="text" label="30131" enable="false" />
+        <setting id="provider.token" type="text" label="30121" default="" option="hidden" enable="false" />
+        <setting type="action" label="30125" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=refresh-provider-token)"/>
+        <setting id="last_vip_check" type="date" visible="false" enable="false"/>
+        <setting label="32500" type="lsep" />
+        <setting id="fastshare.username" type="text" label="30101" default="" enable="false" />
+        <setting id="fastshare.password" type="text" label="30102" default="" option="hidden" enable="false" />
+        <setting id="fastshare.hash" type="text" default="" visible="false" enable="false" />
+        <setting type="action" label="32501" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=set-fastshare-credentials)"/>
+        <setting id="stream_provider_tab" type="text" default="" visible="false" enable="false" />
+    </category>
+
+    <!-- Trakt -->
+    <category label="30700">
+        <setting id="trakt.display_name" type="text" label="30705" default="" enable="false" visible="!eq(0,)" />
+        <setting label="30415" type="action" enable="!eq(3,)" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=sync-local-with-trakt)"/>
+        <setting type="action" label="30701" visible="eq(-2,)" option="close" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=trakt-login)"/>
+        <setting type="action" label="30703" visible="!eq(1,)" option="close" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=trakt-logout)"/>
+        <setting id="trakt.authentication" type="text" enable="false" label="token" visible="false" default="" />
+        <setting id="trakt.name" type="text" label="30705" default="" enable="false" visible="false"/>
+        <setting id="trakt.user_id" type="text" default="" enable="false" visible="false" />
+    </category>
+
+    <!-- Downloads -->
+    <category label="30622">
+        <setting id="downloads_folder" label="30620" type="folder" enable="eq(1,false)" default="" />
+        <setting id="downloads_folder_library" label="30644" type="bool" default="false" />
+        <setting id="downloads_perc_notify" type="number" label="30623" default="10" />
+        <setting id="downloads_parallel" type="slider" label="30637" range="0,1,10" option="int" default="1" />
+		<setting id="store_english_title_for_exotic" type="bool" label="30665" default="false"/>
+        <setting label="30370" type="lsep" />
+        <setting label="30371" type="action" option="close" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=speed-test&amp;id1=5&amp;id2=4)"/>
+        <setting label="30374" type="text" id="speed_test_result" enable="false" default="284"/>
+    </category>
+
+    <!-- Library -->
+    <category label="30340">
+        <setting label="30631" type="bool" id="use_library" default ="false"/>
+        <setting label="30341" type="folder" id="movie_library_folder" enable="eq(-1,true)" default =""/>
+        <setting label="30342" type="folder" id="tvshow_library_folder" enable="eq(-2,true)" default =""/>
+		<setting label="30665" type="bool" id="use_english_title_for_exotic_library" enable="eq(-3,true)"  default="false"/>
+        <setting label="30343" type="action" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=update-library)"/>
+        <setting label="30360" type="lsep" />
+        <setting label="30361" id="library_auto_new" type="bool" enable="eq(-6,true)" default="false"/>
+        <setting label="30362" id="library_auto_new_dubbed" type="bool" enable="eq(-7,true)" default="false"/>
+        <setting label="30363" id="library_auto_new_subs" type="bool" enable="eq(-8,true)" default="false"/>
+        <setting label="30365" id="library_auto_count" type="enum" enable="eq(-9,true)" values="1|3|5|10" default="0" option="int"  />
+        <setting label="30632" type="bool" id="library_auto_update" enable="eq(-10,true)" default ="true"/>
+        <setting label="30376" type="lsep"/>
+        <setting label="30377" id="library_auto_trakt_watchlist" enable="eq(-12,true)" type="bool" default="false" />
+    </category>
+
+    <!-- Subtitles -->
+    <category label="30312">
+        <setting label="32144" type="bool" id="subtitles_provider.auto_search" default ="true"/>
+        <setting label="32145" type="bool" id="subtitles_provider.enable_os_org" enable="eq(-1,true)" default ="true"/>
+        <setting label="32146" type="bool" id="subtitles_provider.enable_titulky_com" enable="eq(-2,true)" default ="false"/>
+        <setting type="sep"/>
+        <setting id="subtitles_provider.name" type="enum" label="30103" lvalues="30114|32146" />
+        <setting id="subtitles_provider.username" type="text" label="30101" default="" visible="eq(-1, 0)" enable="false" />
+        <setting id="subtitles_provider.password" label="30102" type="text" default="" visible="eq(-2, 0)" option="hidden" enable="false" />
+        <setting id="subtitles_provider.titulky_username" type="text" label="30101" default="SCC" visible="eq(-3, 1)" enable="false" />
+        <setting id="subtitles_provider.titulky_password" label="30102" type="text" default="Ya5MzrHx6JiKLNb" visible="eq(-4, 1)" option="hidden" enable="false" />
+        <setting id="subtitles_provider.token" type="text" default="" option="hidden" enable="false" visible="false" />
+        <setting type="action" label="30134" visible="eq(-6, 0)" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=set-subtitles-credentials&amp;provider=OpenSubtitles)"/>
+        <setting type="action" label="30134" visible="eq(-7, 1)" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=set-subtitles-credentials&amp;provider=Titulky)"/>
+        <setting label="30000" type="lsep" />
+        <setting id="subtitles_provider.preferred_language" type="enum" label="30017" values="CZ|SK|EN" default="0" />
+        <setting id="subtitles_provider.fallback_language" type="enum" label="30018" values="|CZ|SK|EN" default="0" />
+    </category>
+
+    <!-- Advanced -->
+    <category label="30012">
+        <setting id="version" type="text" label="30015" enable="false" />
+        <setting id="last_version_available" type="text" label="30016" enable="false"/>
+        <setting id="version_check_interval" type="select" label="30171" lvalues="30161|30162|30163|30164|30165|30166|30172|30167|30168|30169|30170" default="0"/>
+        <setting id="uuid" type="text" label="30107" enable="false" />
+        <setting id="installation_date" type="date" label="30013" enable="false"/>
+        <setting id="debug" type="bool" label="30105" default="true"/>
+        <setting type="action" label="30411" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=show-log-path)" />
+        <setting type="action" label="30412" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=upload-log)" />
+<!--        <setting type="action" label="30108" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/clear-cache)"/>-->
+        <setting id="last_version_check" type="date" visible="false" enable="false"/>
+        <setting id="is_outdated" type="bool" visible="false" enable="false"/>
+        <setting id="silent_update" type="bool" visible="false" enable="false" default="true"/>
+        <setting type="action" label="30617" action="RunPlugin(plugin://plugin.video.stream-cinema-2-release/command/?command=delete-history-all)" />
+
+        <setting label="32150" type="lsep" />
+        <setting id="auto_select_stream.limit_bitrate" type="bool" label="30405" default="false" />
+        <setting id="auto_select_stream.max_bitrate" subsetting="true" type="slider" label="Max bitrate (Mbit/s)" range="1,100" default="0" enable="eq(-1,true)" />
+        <setting id="auto_select_stream.preferred_quality" type="text" label="30401" default="1080p" />
+        <setting id="auto_select_stream.language" type="bool" label="30648" default="true" />
+        <setting id="auto_select_stream.preferred_subtitles" type="bool" label="30649" default="false" />
+        <setting id="auto_select_stream.preferred_channels_enabled" type="bool" label="30407" default="true" />
+        <setting id="auto_select_stream.preferred_channels" subsetting="true" type="select" label="30408" values="2.0|2.1|3|3.0|3.1|4.0|4.1|5.0|5.1|7.0|7.1" default="2.0" enable="eq(-1,true)" />
+        <setting id="auto_select_stream.preferred_video_codecs" type="text" label="30645" />
+        <setting id="auto_select_stream.avoid_video_codecs" type="text" label="30406" />
+        <setting id="auto_select_stream.preferred_specifications" type="text" label="30655" />
+        <setting id="auto_select_stream.avoid_specifications" type="text" label="30656" />
+        <setting label="30647" type="lsep" />
+        <setting id="auto_select_stream.max_bitrate_weight" type="labelenum" values="1|2|3|4|5|6|7|8|9|10" default="5" label="30650" enable="eq(-12,true)" />
+        <setting id="auto_select_stream.preferred_quality_weight" type="labelenum" values="1|2|3|4|5|6|7|8|9|10" default="2" label="30651" />
+        <setting id="auto_select_stream.language_weight" type="labelenum" values="1|2|3|4|5|6|7|8|9|10" default="10" label="30652" enable="eq(-11,true)" />
+        <setting id="auto_select_stream.preferred_subtitles_weight" type="labelenum" values="1|2|3|4|5|6|7|8|9|10" default="5" label="30653" enable="eq(-11,true)" />
+        <setting id="auto_select_stream.preferred_channels_weight" type="labelenum" values="1|2|3|4|5|6|7|8|9|10" default="1" label="30408" enable="eq(-11,true)"  />
+        <setting id="auto_select_stream.preferred_video_codecs_weight" type="labelenum" values="1|2|3|4|5|6|7|8|9|10" default="3" label="30654"  />
+        <setting id="auto_select_stream.preferred_specifications_weight" type="labelenum" values="1|2|3|4|5|6|7|8|9|10" default="8" label="30657" />
+        <setting id="auto_select_stream.force" type="bool" label="30667" default="false"/>
+    </category>
+
+</settings>

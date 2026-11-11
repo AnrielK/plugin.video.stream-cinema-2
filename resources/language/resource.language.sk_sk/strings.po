@@ -1,0 +1,3408 @@
+# XBMC Media Center language file
+# Addon Name: Stream Cinema Community
+# Addon id: plugin.video.stream-cinema-community
+# Addon version: 0.0.1
+# Addon Provider: scc
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@kodi.org\n"
+"POT-Creation-Date: 2020-05-02 13:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: SCC Team\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sk\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+
+msgctxt "#30010"
+msgid "General"
+msgstr "Hlavné"
+
+msgctxt "#30011"
+msgid "Source"
+msgstr "Zdroj"
+
+msgctxt "#30012"
+msgid "Advanced"
+msgstr "Pokročilé"
+
+msgctxt "#30013"
+msgid "Installation date"
+msgstr "Dátum inštalácie"
+
+msgctxt "#30014"
+msgid "Interface"
+msgstr "Rozhranie"
+
+msgctxt "#30015"
+msgid "Version"
+msgstr "Verzia"
+
+msgctxt "#30016"
+msgid "Latest available version"
+msgstr "Posledná dostupná verzia"
+
+msgctxt "#30017"
+msgid "Language"
+msgstr "Jazyk"
+
+msgctxt "#30018"
+msgid "Language (fallback)"
+msgstr "Jazyk (záložný)"
+
+msgctxt "#30019"
+msgid "Regional"
+msgstr "Regionálne"
+
+msgctxt "#30020"
+msgid "Show language in title"
+msgstr "Zobraziť jazyk v názve"
+
+msgctxt "#30021"
+msgid "Show year in title"
+msgstr "Zobraziť rok v názve"
+
+msgctxt "#30022"
+msgid "Maximum age of [B]New releases[/B] in days"
+msgstr "Maximálny vek [B]Noviniek[/B] v dňoch"
+
+msgctxt "#30023"
+msgid "Maximum age of [B]New dubbed releases[/B] in days"
+msgstr "Maximálny vek [B]Noviniek dabovaných[/B] v dňoch"
+
+msgctxt "#30114"
+msgid "OpenSubtitles.org"
+msgstr ""
+
+msgctxt "#30115"
+msgid "Show codec"
+msgstr "Zobraziť kódek"
+
+msgctxt "#30116"
+msgid "Show bit rate"
+msgstr "Zobraziť prenosovú rýchlosť"
+
+msgctxt "#30117"
+msgid "Stream info"
+msgstr "Informácie o streame"
+
+msgctxt "#30118"
+msgid "Thresholds"
+msgstr "Limity"
+
+msgctxt "#30119"
+msgid "Display A-Z at number below"
+msgstr "Zobraziť výsledky A-Z pri počte pod"
+
+msgctxt "#30120"
+msgid "Number of items per page"
+msgstr "Počet položiek na stránku"
+
+msgctxt "#30129"
+msgid "Show duration"
+msgstr "Zobraziť trvanie"
+
+msgctxt "#30101"
+msgid "Username"
+msgstr "Používateľské meno"
+
+msgctxt "#30102"
+msgid "Password"
+msgstr "Heslo"
+
+msgctxt "#30103"
+msgid "Provider"
+msgstr "Poskytovateľ"
+
+msgctxt "#30104"
+msgid "Webshare.cz"
+msgstr ""
+
+msgctxt "#30105"
+msgid "Debug"
+msgstr "Ladiť"
+
+msgctxt "#30106"
+msgid "Explicit content"
+msgstr "Explicitný obsah"
+
+msgctxt "#30107"
+msgid "UUID"
+msgstr ""
+
+msgctxt "#30108"
+msgid "Clear cache"
+msgstr "Vyčistiť medzi pamäť"
+
+msgctxt "#30109"
+msgid "Sort by size"
+msgstr "Zoradiť podľa veľkosti"
+
+msgctxt "#30110"
+msgid "[B]↑[/B] Ascending"
+msgstr "[B]↑[/B] Vzostupne"
+
+msgctxt "#30111"
+msgid "[B]↓[/B] Descending"
+msgstr "[B]↓[/B] Zostupne"
+
+msgctxt "#30200"
+msgid "Movies"
+msgstr "Filmy"
+
+msgctxt "#30201"
+msgid "Series"
+msgstr "Seriály"
+
+msgctxt "#30202"
+msgid "Main Menu"
+msgstr "Hlavné menu"
+
+msgctxt "#30203"
+msgid "Next page"
+msgstr "Ďalšia strana"
+
+msgctxt "#30204"
+msgid "Search"
+msgstr "Hľadať"
+
+msgctxt "#30205"
+msgid "Search history"
+msgstr "História hľadania"
+
+msgctxt "#30207"
+msgid "Enter title, actor, role, writer, director or studio"
+msgstr "Zadajte názov, herca, rolu, autora, režiséra alebo štúdio"
+
+msgctxt "#30208"
+msgid "Settings"
+msgstr "Nastavenia"
+
+msgctxt "#30209"
+msgid "Genre"
+msgstr "Žánr"
+
+msgctxt "#30210"
+msgid "Alphabetically"
+msgstr "Podľa abecedy"
+
+msgctxt "#30211"
+msgid "Popular"
+msgstr "Populárne"
+
+msgctxt "#30212"
+msgid "Watching now"
+msgstr "Práve sledované"
+
+msgctxt "#30213"
+msgid "Action"
+msgstr "Akčný"
+
+msgctxt "#30214"
+msgid "Animated"
+msgstr "Animovaný"
+
+msgctxt "#30215"
+msgid "Adventure"
+msgstr "Dobrodružný"
+
+msgctxt "#30216"
+msgid "Documentary"
+msgstr "Dokumentárny"
+
+msgctxt "#30217"
+msgid "Drama"
+msgstr "Dráma"
+
+msgctxt "#30218"
+msgid "Erotic"
+msgstr "Erotický"
+
+msgctxt "#30219"
+msgid "Fantasy"
+msgstr ""
+
+msgctxt "#30220"
+msgid "Historical"
+msgstr "Historický"
+
+msgctxt "#30221"
+msgid "Horror"
+msgstr "Hororový"
+
+msgctxt "#30222"
+msgid "Music"
+msgstr "Hudobný"
+
+msgctxt "#30223"
+msgid "IMAX"
+msgstr ""
+
+msgctxt "#30224"
+msgid "Catastrophic"
+msgstr "Katastrofický"
+
+msgctxt "#30225"
+msgid "Comedy"
+msgstr "Komédia"
+
+msgctxt "#30226"
+msgid "Short"
+msgstr "Krátkometrážny"
+
+msgctxt "#30227"
+msgid "Crime"
+msgstr "Kriminálny"
+
+msgctxt "#30228"
+msgid "Musical"
+msgstr "Muzikál"
+
+msgctxt "#30229"
+msgid "Mystery"
+msgstr "Mysteriózny"
+
+msgctxt "#30230"
+msgid "Educational"
+msgstr "Náučný"
+
+msgctxt "#30231"
+msgid "Fairy Tale"
+msgstr "Rozprávky"
+
+msgctxt "#30232"
+msgid "Pornographic"
+msgstr "Pornografický"
+
+msgctxt "#30233"
+msgid "Psychological"
+msgstr "Psychologický"
+
+msgctxt "#30234"
+msgid "Journalistic"
+msgstr "Publicistický"
+
+msgctxt "#30235"
+msgid "Reality"
+msgstr ""
+
+msgctxt "#30236"
+msgid "Travel"
+msgstr "Cestopisný"
+
+msgctxt "#30237"
+msgid "Family"
+msgstr "Rodinný"
+
+msgctxt "#30238"
+msgid "Romance"
+msgstr "Romantický"
+
+msgctxt "#30239"
+msgid "Sci-Fi"
+msgstr ""
+
+msgctxt "#30240"
+msgid "Competition"
+msgstr "Súťažný"
+
+msgctxt "#30241"
+msgid "Sports"
+msgstr "Športový"
+
+msgctxt "#30242"
+msgid "Stand-Up"
+msgstr ""
+
+msgctxt "#30243"
+msgid "Talk-show"
+msgstr ""
+
+msgctxt "#30244"
+msgid "Telenovela"
+msgstr ""
+
+msgctxt "#30245"
+msgid "Thriller"
+msgstr ""
+
+msgctxt "#30246"
+msgid "Military"
+msgstr "Vojenský"
+
+msgctxt "#30247"
+msgid "Western"
+msgstr ""
+
+msgctxt "#30248"
+msgid "Biographical"
+msgstr "Životopisný"
+
+msgctxt "#30249"
+msgid "Animation"
+msgstr "Animácie"
+
+msgctxt "#30250"
+msgid "Select a media source"
+msgstr "Vyberte zdroj médií"
+
+msgctxt "#30251"
+msgid "0-9"
+msgstr ""
+
+msgctxt "#30252"
+msgid "Show {letters}"
+msgstr "Zobraziť {letters}"
+
+msgctxt "#30253"
+msgid "Choose the stream"
+msgstr "Vybrať stream"
+
+msgctxt "#30254"
+msgid "Watch history"
+msgstr "História sledovania"
+
+msgctxt "#30255"
+msgid "By studio"
+msgstr "Podľa štúdia"
+
+msgctxt "#30256"
+msgid "By year"
+msgstr "Podľa roku"
+
+msgctxt "#30257"
+msgid "By country"
+msgstr "Podľa krajiny"
+
+msgctxt "#30258"
+msgid "By duration"
+msgstr "Podľa dĺžky"
+
+msgctxt "#30259"
+msgid "By language"
+msgstr "Podľa jazyka"
+
+msgctxt "#30260"
+msgid "#"
+msgstr ""
+
+msgctxt "#30261"
+msgid "Trending"
+msgstr "Trendy"
+
+msgctxt "#30268"
+msgid "Networks"
+msgstr "TV stanice"
+
+msgctxt "#30262"
+msgid "Most watched"
+msgstr "Najsledovanejšie"
+
+msgctxt "#30263"
+msgid "What is Pepa next door watching today?"
+msgstr "Čo dnes asi Pepa od vedľa pozerá?"
+
+msgctxt "#30264"
+msgid "People do like weird things lately."
+msgstr "Ľudia majú v poslednej dobe radi čudné veci."
+
+msgctxt "#30265"
+msgid "Various things have happened here since the beginning of time."
+msgstr "Od počiatku vekov sa tu toho udialo."
+
+msgctxt "#30920"
+msgid "Season {number}"
+msgstr "Séria {number}"
+
+msgctxt "#30921"
+msgid "Episode {number}"
+msgstr "Epizóda {number}"
+
+msgctxt "#30300"
+msgid "Missing provider credentials"
+msgstr "Chýbajú prihlasovacie údaje poskytovateľa"
+
+msgctxt "#30500"
+msgid "Server error"
+msgstr "Chyba servera"
+
+msgctxt "#30501"
+msgid "Servers are experiencing issues. Please try again later."
+msgstr "Servery majú problémy. Opakujte akciu neskôr prosím."
+
+msgctxt "#30510"
+msgid "Server connection failure"
+msgstr "Chyba spojenia so serverom"
+
+msgctxt "#30511"
+msgid "Please check your Internet connection or re-try the operation later."
+msgstr "Skontrolujte pripojenie k internetu alebo zopakujte akciu neskôr prosím."
+
+
+msgctxt "#30302"
+msgid "Nothing found"
+msgstr "Nič sa nenašlo"
+
+msgctxt "#30303"
+msgid "Found {number} records"
+msgstr "Nájdených {number} záznamov"
+
+msgctxt "#30304"
+msgid "This account doesn't have active subscription with the provider"
+msgstr "Tento účet nemá aktívne predplatné u poskytovateľa"
+
+msgctxt "#30307"
+msgid "New version available!"
+msgstr "Nová verzia je k dispozícii!"
+
+msgctxt "#30308"
+msgid "Please download latest plugin release [COLOR green]{version}[/COLOR] from the repository or from our website [COLOR blue]sc2.zone[/COLOR]."
+msgstr "Stiahnite si najnovšiu verziu pluginu [COLOR green]{version}[/COLOR] z repozitára alebo z nášho webu [COLOR blue]sc2.zone[/COLOR]."
+
+msgctxt "#30121"
+msgid "Token"
+msgstr ""
+
+msgctxt "#30122"
+msgid "Verify login information"
+msgstr "Overiť prihlasovacie údaje"
+
+msgctxt "#30123"
+msgid "Provider details"
+msgstr "Podrobnosti o poskytovateľovi"
+
+msgctxt "#30124"
+msgid "Incorrect provider credentials"
+msgstr "Nesprávne prihlasovacie údaje poskytovateľa"
+
+msgctxt "#30125"
+msgid "Refresh token"
+msgstr "Obnoviť token"
+
+msgctxt "#30126"
+msgid "Info"
+msgstr ""
+
+msgctxt "#30127"
+msgid "Token was successfully refreshed"
+msgstr "Token bol úspešne obnovený"
+
+msgctxt "#30128"
+msgid "Login successful"
+msgstr "Prihlásenie úspešné"
+
+msgctxt "#30130"
+msgid "Remaining days of {provider} subscription"
+msgstr "Do konca predplatného zostáva {provider} dní"
+
+msgctxt "#30131"
+msgid "Subscription"
+msgstr "Predplatné"
+
+msgctxt "#30132"
+msgid "Days"
+msgstr "Dni"
+
+msgctxt "#30133"
+msgid "Not active"
+msgstr "Neaktívne"
+
+msgctxt "#30134"
+msgid "Change credentials"
+msgstr "Zmeniť prihlasovacie údaje"
+
+msgctxt "#30135"
+msgid "Show mixed results notifications"
+msgstr "Zobraziť oznámenie o výsledkoch vyhľadávania"
+
+msgctxt "#30136"
+msgid "New releases"
+msgstr "Novinky"
+
+msgctxt "#30137"
+msgid "Recently added"
+msgstr "Posledné pridané"
+
+msgctxt "#30138"
+msgid "Show top navigation"
+msgstr "Zobraziť navigáciu hore"
+
+msgctxt "#30139"
+msgid "New dubbed releases"
+msgstr "Novinky dabované"
+
+msgctxt "#30140"
+msgid "Number of genres next to the name"
+msgstr "Počet žánrov pri názve"
+
+msgctxt "#30141"
+msgid "Pin"
+msgstr "Pripnúť"
+
+msgctxt "#30142"
+msgid "Unpin"
+msgstr "Odopnúť"
+
+msgctxt "#30143"
+msgid "Show HDR streams"
+msgstr "Zobraziť HDR streamy"
+
+msgctxt "#30144"
+msgid "Successfully downloaded"
+msgstr "Úspešne stiahnuté"
+
+msgctxt "#30145"
+msgid "Adding {filename} to download"
+msgstr "Pridávam {filename} ku sťahovanie"
+
+msgctxt "#30146"
+msgid "Already downloading"
+msgstr "Už sa sťahuje"
+
+msgctxt "#30147"
+msgid "List is empty"
+msgstr "Zoznam je prázdny"
+
+msgctxt "#30148"
+msgid "Sub"
+msgstr "Tit"
+
+msgctxt "#30149"
+msgid "HDR"
+msgstr ""
+
+msgctxt "#30150"
+msgid "Show HDR"
+msgstr "Zobraziť HDR"
+
+msgctxt "#30151"
+msgid "Hide"
+msgstr "Skryť"
+
+msgctxt "#30152"
+msgid "Show"
+msgstr "Ukázať"
+
+msgctxt "#30153"
+msgid "Move back"
+msgstr "Vrátiť späť"
+
+msgctxt "#30154"
+msgid "Hidden"
+msgstr ""
+
+msgctxt "#30155"
+msgid "Show [B]Hidden[/B]"
+msgstr "Zobraziť [B]Skryté[/B]"
+
+msgctxt "#30156"
+msgid "Streams"
+msgstr "Streamy"
+
+msgctxt "#30157"
+msgid "Restrict the selection of streams according to the download speed"
+msgstr "Obmedziť výber streamov podľa rýchlosti sťahovania"
+
+msgctxt "#30158"
+msgid "Maximum bit rate in Mbit/s"
+msgstr "Maximálna bitová rýchlosť v Mbit/s"
+
+msgctxt "#30159"
+msgid "Show 3D streams"
+msgstr "Zobraziť 3D streamy"
+
+msgctxt "#30160"
+msgid "Extended watch history"
+msgstr "Rozšírená história sledovanie"
+
+msgctxt "#30161"
+msgid "Instantly"
+msgstr "Ihneď"
+
+msgctxt "#30162"
+msgid "1 hour"
+msgstr "1 hodina"
+
+msgctxt "#30163"
+msgid "3 hours"
+msgstr "3 hodín"
+
+msgctxt "#30164"
+msgid "6 hours"
+msgstr "6 hodín"
+
+msgctxt "#30165"
+msgid "12 hours"
+msgstr "12 hodín"
+
+msgctxt "#30166"
+msgid "1 day"
+msgstr "1 deň"
+
+msgctxt "#30167"
+msgid "7 days"
+msgstr "7 dní"
+
+msgctxt "#30168"
+msgid "14 days"
+msgstr "14 dní"
+
+msgctxt "#30169"
+msgid "30 days"
+msgstr "30 dní"
+
+msgctxt "#30170"
+msgid "Never"
+msgstr "Nikdy"
+
+msgctxt "#30171"
+msgid "Update check interval"
+msgstr "Interval kontroly aktualizácie"
+
+msgctxt "#30172"
+msgid "3 days"
+msgstr "3 dni"
+
+msgctxt "#30173"
+msgid "Additional functions"
+msgstr "Doplnkové funkcie"
+
+msgctxt "#30174"
+msgid "Concerts"
+msgstr "Koncerty"
+
+msgctxt "#30309"
+msgid "TV picks of the day (CSFD.cz)"
+msgstr "Dnešné TV tipy (ČSFD.cz)"
+
+msgctxt "#30310"
+msgid "Choose preferred language"
+msgstr "Vyberte preferovaný jazyk"
+
+msgctxt "#30311"
+msgid "Choose fallback language"
+msgstr "Vyberte záložný jazyk"
+
+msgctxt "#30312"
+msgid "Subtitles"
+msgstr "Titulky"
+
+msgctxt "#30313"
+msgid "Automatic subtitles"
+msgstr "Automatické titulky"
+
+msgctxt "#30314"
+msgid "Plugin was automatically updated to latest version."
+msgstr "Doplnok bol automaticky aktualizovaný na najnovšiu verziu."
+
+msgctxt "#30315"
+msgid "Missing stream"
+msgstr "Chýbajúci stream"
+
+msgctxt "#30316"
+msgid "There is no available stream right now."
+msgstr "Momentálne nie je k dispozícii žiadny stream."
+
+msgctxt "#30317"
+msgid "Changelog"
+msgstr "Zoznam zmien"
+
+msgctxt "#30318"
+msgid "This stream is currently not available."
+msgstr "Tento stream momentálne nie je k dispozícii."
+
+msgctxt "#30319"
+msgid "Tell us about it on [COLOR blue][B]https://streamcinema.cz[/B][/COLOR]."
+msgstr "Povedzte nám o tom na [COLOR blue][B]https://streamcinema.cz[/B][/COLOR]."
+
+msgctxt "#30320"
+msgid "Stream was automatically flagged as unavailable and removed from the list. It will show again once it is available."
+msgstr "Stream bol automaticky označený ako nedostupný a odstránený zo zoznamu. Keď bude k dispozícii, znova sa zobrazí."
+
+msgctxt "#30321"
+msgid "Provider error"
+msgstr "Chyba poskytovateľa"
+
+msgctxt "#30322"
+msgid "The provider hasn't returned a valid link because there are currently too many devices using this account."
+msgstr "Poskytovateľ nevrátil platný odkaz, pretože tento účet momentálne používa príliš veľa zariadení."
+
+msgctxt "#30340"
+msgid "Library"
+msgstr "Knižnica"
+
+msgctxt "#30341"
+msgid "Movies folder"
+msgstr "Adresár pre filmy"
+
+msgctxt "#30342"
+msgid "Series folder"
+msgstr "Adresár pre seriály"
+
+msgctxt "#30343"
+msgid "Check for new TV shows content"
+msgstr "Skontroluj nové epizódy seriálov"
+
+msgctxt "#30350"
+msgid "Add to library"
+msgstr "Pridať do knižnice"
+
+msgctxt "#30351"
+msgid "Information"
+msgstr "Informácia"
+
+msgctxt "#30352"
+msgid "Adding TV Show to library is in progress, please wait..."
+msgstr "Pridávanie seriálu do knižnice práve prebieha, prosím počkajte..."
+
+msgctxt "#30355"
+msgid "Unknown library folder"
+msgstr "Neznámy adresár"
+
+msgctxt "#30356"
+msgid "Please set up library folder in settings."
+msgstr "Prosím, nastav adresár pre knižnicu."
+
+msgctxt "#30360"
+msgid "Automatically add movies from lists"
+msgstr "Automaticky pridávať filmy zo zoznamov"
+
+msgctxt "#30361"
+msgid "New releases"
+msgstr "Novinky"
+
+msgctxt "#30362"
+msgid "New dubbed releases"
+msgstr "Novinky dabované"
+
+msgctxt "#30363"
+msgid "New subbed releases"
+msgstr "Novinky s vloženými titulkami"
+
+msgctxt "#30365"
+msgid "Check last X days"
+msgstr "Skontrolovať posledných X dní"
+
+msgctxt "#30370"
+msgid "Download speed test"
+msgstr "Test rýchlosti sťahovania"
+
+msgctxt "#30371"
+msgid "[I]Start speed test[/I]"
+msgstr "[I]Spustit test rýchlosti sťahovania[/I]"
+
+msgctxt "#30372"
+msgid "Speed test is in progress, please wait..."
+msgstr "Test rýchlosti sťahovania prebieha, čakejte prosím..."
+
+msgctxt "#30373"
+msgid "Result of download speed test: {0}"
+msgstr "Výsledok testu rýchlosti sťahovania: {0}"
+
+msgctxt "#30374"
+msgid "Last measured speed"
+msgstr "Posledná nameraná rýchlosť"
+
+msgctxt "#30376"
+msgid "Trakt.tv Watchlist"
+msgstr "Trakt.tv Zoznam k pozretiu"
+
+msgctxt "#30377"
+msgid "Automatically add from movies and TV shows"
+msgstr "Automaticky pridávať filmy a seriály"
+
+msgctxt "#30378"
+msgid "[COLOR red]Plugin could not been updated.[/COLOR] Please allow automatic updates or update plugin manually."
+msgstr "[COLOR red]Doplnok sa nepodarilo aktualizovať.[/COLOR] Povoľte automatické aktualizácie alebo aktualizujte doplnok manuálne."
+
+msgctxt "#30379"
+msgid "[COLOR red]There was an error.[/COLOR] This bug could be fixed in a newer version.\n\nDo you want to update [B][COLOR lightskyblue]SCC[/COLOR][/B] to the latest version?"
+msgstr "[COLOR red]Vyskytla sa chyba.[/COLOR] Táto chyba sa možno opravila v novšej verzii.\n\nChcete aktualizovať [B][COLOR lightskyblue]SCC[/COLOR][/B] na najnovšiu verziu?"
+
+msgctxt "#30380"
+msgid "Plugin error"
+msgstr "Chyba doplnku"
+
+msgctxt "#30381"
+msgid "There was an unexpected error."
+msgstr "Vyskytla sa neočakávaná chyba."
+
+msgctxt "#30382"
+msgid "Play the trailer"
+msgstr "Prehrať upútavku"
+
+msgctxt "#30383"
+msgid "just now"
+msgstr "práve teraz"
+
+msgctxt "#30384"
+msgid "{0} seconds ago"
+msgstr "pred {0} sekundami"
+
+msgctxt "#30385"
+msgid "a minute ago"
+msgstr "pred minútou"
+
+msgctxt "#30386"
+msgid "{0} minutes ago"
+msgstr "pred {0} minútami"
+
+msgctxt "#30387"
+msgid "an hour ago"
+msgstr "pred hodinou"
+
+msgctxt "#30388"
+msgid "{0} hours ago"
+msgstr "pred {0} hodinami"
+
+msgctxt "#30389"
+msgid "yesterday"
+msgstr "včera"
+
+msgctxt "#30390"
+msgid "{0} days ago"
+msgstr "pred {0} dňami"
+
+msgctxt "#30391"
+msgid "{0} weeks ago"
+msgstr "pred {0} týždňami"
+
+msgctxt "#30392"
+msgid "{0} months ago"
+msgstr "pred {0} mesiacmi"
+
+msgctxt "#30393"
+msgid "{0} years ago"
+msgstr "pred {0} rokmi"
+
+msgctxt "#30394"
+msgid "Today"
+msgstr "Dnes"
+
+msgctxt "#30395"
+msgid "Tomorrow"
+msgstr "Zajtra"
+
+msgctxt "#30396"
+msgid "Yesterday"
+msgstr "Včera"
+
+msgctxt "#30397"
+msgid "Choose a date"
+msgstr "Zvoliť dátum"
+
+msgctxt "#30398"
+msgid "TV program"
+msgstr "TV program"
+
+msgctxt "#30399"
+msgid "Show all stations"
+msgstr "Zobraziť všetky stanice"
+
+msgctxt "#30400"
+msgid "Preferred stream"
+msgstr "Preferovaný výber streamov"
+
+msgctxt "#30401"
+msgid "Preferred video quality"
+msgstr "Preferovaná kvalita videa"
+
+msgctxt "#30402"
+msgid "{0} week ago"
+msgstr "pred {0} týždňom"
+
+msgctxt "#30403"
+msgid "Enable Stream Autoselect for play"
+msgstr "Automatický výber streamu pre prehrávanie"
+
+msgctxt "#30404"
+msgid "Select stream"
+msgstr "Vybrať stream"
+
+msgctxt "#30405"
+msgid "Enable bit rate limit"
+msgstr "Zapnúť obmedzenie maximálnym bitrate"
+
+msgctxt "#30406"
+msgid "Avoid Video Codecs"
+msgstr "Nepoužívať vymenované kodeky"
+
+msgctxt "#30407"
+msgid "Enable Audio Channel preference"
+msgstr "Preferovať počet zvukových kanálov"
+
+msgctxt "#30408"
+msgid "Select Audio Channel preference"
+msgstr "Počet kanálov"
+
+msgctxt "#30410"
+msgid "Log file path"
+msgstr "Cesta k log súboru"
+
+msgctxt "#30411"
+msgid "Show log file path"
+msgstr "Zobraziť umiestnenia log súboru"
+
+msgctxt "#30412"
+msgid "Upload log file"
+msgstr "Nahrať log súbor"
+
+msgctxt "#30413"
+msgid "Mark as watched"
+msgstr "Označiť ako videné"
+
+msgctxt "#30414"
+msgid "Mark as unwatched"
+msgstr "Označiť ako nevidené"
+
+msgctxt "#30415"
+msgid "Synchronize local watched history"
+msgstr "Synchronizovať lokálnu históriu pozretých"
+
+msgctxt "#30416"
+msgid "Unsupported device"
+msgstr "Nepodporované zariadenie"
+
+msgctxt "#30417"
+msgid "This device or its configuration is not compatible with this function. If you use MySQL database please switch to SQLite."
+msgstr "Toto zariadenie alebo jeho konfigurácia nie je kompatibilná s touto funkciou. Ak používate databázu MySQL, prepnite na SQLite."
+
+msgctxt "#30418"
+msgid "Lite mode"
+msgstr "Odľahčený režim"
+
+msgctxt "#30419"
+msgid "Choose a time"
+msgstr "Zvoliť čas"
+
+msgctxt "#30420"
+msgid "Compact stream selection window"
+msgstr "Kompaktné okno výberu streamov"
+
+msgctxt "#30700"
+msgid "Trakt.tv"
+msgstr "Trakt.tv"
+
+msgctxt "#30701"
+msgid "Authorize device on Trakt.tv"
+msgstr "Autorizovať zariadenie na Trakt.tv"
+
+msgctxt "#30702"
+msgid "Visit %s\nand use this code: %s."
+msgstr "Navštívte %s\na použite autorizačný kód: %s."
+
+msgctxt "#30703"
+msgid "[COLOR firebrick]Unauthorize Trakt.tv[/COLOR]"
+msgstr "[COLOR firebrick]Odhlásiť z Trakt.tv[/COLOR]"
+
+msgctxt "#30704"
+msgid "Hi %s! Are you sure you want to unregister this device from Trakt.tv"
+msgstr "%s, nazoaj chceš odregistrovať toto zariadenie z Trakt.tv?"
+
+msgctxt "#30705"
+msgid "Signed in as"
+msgstr "Prihlásený ako"
+
+msgctxt "#30706"
+msgid "Refresh token"
+msgstr "Obnoviť token"
+
+msgctxt "#30707"
+msgid "Token created"
+msgstr "Token vygenerovaný"
+
+msgctxt "#30708"
+msgid "Trakt.tv"
+msgstr ""
+
+msgctxt "#30709"
+msgid "Watchlist"
+msgstr "Zoznam k pozretiu"
+
+msgctxt "#30710"
+msgid "History"
+msgstr "História"
+
+msgctxt "#30711"
+msgid "Rated movies"
+msgstr "Ohodnotené filmy"
+
+msgctxt "#30712"
+msgid "Rated shows"
+msgstr "Ohodnotené seriály"
+
+msgctxt "#30713"
+msgid "Watched movies"
+msgstr "Pozreté filmy"
+
+msgctxt "#30714"
+msgid "Watched shows"
+msgstr "Pozreté seriály"
+
+msgctxt "#30715"
+msgid "Friends & Following"
+msgstr "Priatelia a sledovaní"
+
+msgctxt "#30718"
+msgid "Collection"
+msgstr "Zbierka"
+
+msgctxt "#30719"
+msgid "Liked lists"
+msgstr "Obľúbené zoznamy"
+
+msgctxt "#30720"
+msgid "Popular lists"
+msgstr "Populárne zoznamy"
+
+msgctxt "#30721"
+msgid "Trending lists"
+msgstr "Zoznamy trendov"
+
+msgctxt "#30722"
+msgid "Delete list"
+msgstr "Odstrániť zoznam"
+
+msgctxt "#30723"
+msgid "Are you sure you want to delete a list \"%s\"?\n\nThis action can't be undone."
+msgstr "Chceš odstrániť zoznam \"%s\"?\nTáto akcia sa nedá vrátiť."
+
+msgctxt "#30724"
+msgid "list removed"
+msgstr "zoznam odstránený"
+
+msgctxt "#30725"
+msgid "Trakt.tv Menu"
+msgstr "Trakt.tv menu"
+
+msgctxt "#30726"
+msgid "Trakt.tv: %s"
+msgstr "Trakt.tv: %s"
+
+msgctxt "#30727"
+msgid "Rate"
+msgstr "Ohodnotiť"
+
+msgctxt "#30728"
+msgid "Add to Watchlist"
+msgstr "Pridať do [B]Zoznam k pozretiu[/B]"
+
+msgctxt "#30729"
+msgid "Remove from [B]Watchlist[/B]"
+msgstr "Odobrať zo [B]Zoznam k pozretiu[/B]"
+
+msgctxt "#30730"
+msgid "Unfollow"
+msgstr "Prestať sledovať"
+
+msgctxt "#30731"
+msgid "User unfollowed"
+msgstr "Odstránený zo sledovaných"
+
+msgctxt "#30732"
+msgid "Remove rating"
+msgstr "Odstrániť hodnotenie"
+
+msgctxt "#30733"
+msgid " 1 - Weak sauce :("
+msgstr "  1 - Najhoršie"
+
+msgctxt "#30734"
+msgid " 2 - Terrible"
+msgstr "  2 - Veľmi zlé"
+
+msgctxt "#30735"
+msgid " 3 - Bad"
+msgstr "  3 - Zlé"
+
+msgctxt "#30736"
+msgid " 4 - Poor"
+msgstr "  4 - Podpriemerné"
+
+msgctxt "#30737"
+msgid " 5 - Meh"
+msgstr "  5 - Priemerné"
+
+msgctxt "#30738"
+msgid " 6 - Unrate"
+msgstr "  6 - Prijateľné"
+
+msgctxt "#30739"
+msgid " 7 - Good"
+msgstr "  7 - Dobré"
+
+msgctxt "#30740"
+msgid " 8 - Great"
+msgstr "  8 - Veľmi dobré"
+
+msgctxt "#30741"
+msgid " 9 - Superb"
+msgstr "  9 - Výborné"
+
+msgctxt "#30742"
+msgid "10 - Totally ninja!"
+msgstr "10 - Najlepšie"
+
+msgctxt "#30743"
+msgid "Rate %s"
+msgstr "Ohodnotiť %s"
+
+msgctxt "#30744"
+msgid "Add to %s"
+msgstr "Pridať do %s"
+
+msgctxt "#30745"
+msgid "Remove from %s"
+msgstr "Odobrať z %s"
+
+msgctxt "#30746"
+msgid "Add to new list"
+msgstr "Pridať do nového zoznamu"
+
+msgctxt "#30747"
+msgid "Rating %d added"
+msgstr "Hodnotenie %d odoslané"
+
+msgctxt "#30748"
+msgid "Rating removed"
+msgstr "Hodnotenie odstránené"
+
+msgctxt "#30749"
+msgid "New List Name"
+msgstr "Názov nového zoznamu"
+
+msgctxt "#30750"
+msgid "Added to %s"
+msgstr "Pridané do %s"
+
+msgctxt "#30751"
+msgid "Removed from %s"
+msgstr "Odstránené z %s"
+
+msgctxt "#30752"
+msgid "Like list"
+msgstr "Pridať do obľúbených"
+
+msgctxt "#30753"
+msgid "Unlike list"
+msgstr "Odobrať z obľúbených"
+
+msgctxt "#30754"
+msgid "Clone list"
+msgstr "Klonovať zoznam"
+
+msgctxt "#30755"
+msgid "Append to my list"
+msgstr "Pridať do zoznamu"
+
+msgctxt "#30756"
+msgid "List was liked"
+msgstr "Zoznam pridaný do obľúbených"
+
+msgctxt "#30757"
+msgid "List unliked"
+msgstr "Zoznam odstránený z obľúbených"
+
+msgctxt "#30758"
+msgid "Rename list"
+msgstr "Premenovať zoznam"
+
+msgctxt "#30759"
+msgid "renamed to %s"
+msgstr "premenovaný na %s"
+
+msgctxt "#30760"
+msgid "Choose a list to append an items"
+msgstr "Zoznam, do ktorého chceš pridať položky"
+
+msgctxt "#30761"
+msgid "Added %d/%d items"
+msgstr "Pridaných %d/%d položiek"
+
+msgctxt "#30762"
+msgid "to list %s"
+msgstr "do zoznamu %s"
+
+msgctxt "#30763"
+msgid "cloned successfully"
+msgstr "bol naklonovaný"
+
+msgctxt "#30764"
+msgid "List clone"
+msgstr "Klonovanie zoznamu"
+
+msgctxt "#30765"
+msgid "Do you want to clone a list \"%s\" into your custom lists?"
+msgstr "Chceš naklonovať zoznam \"%s\" medzi svoje zoznamy?"
+
+msgctxt "#30766"
+msgid "Can't create a list"
+msgstr "Nemôžem vytvoriť zoznam"
+
+msgctxt "#30767"
+msgid "Please, try again later."
+msgstr "Skúste to neskôr, prosím."
+
+msgctxt "#30768"
+msgid "Goodbye %s!"
+msgstr "Dovidenia %s!"
+
+msgctxt "#30769"
+msgid "Device signed out successfully"
+msgstr "Zariadenie bolo odhlásené"
+
+msgctxt "#30770"
+msgid "Welcome %s!"
+msgstr "Vitaj %s!"
+
+msgctxt "#30771"
+msgid "Device was authenticated"
+msgstr "Zariadenie bolo prihlásené"
+
+msgctxt "#30600"
+msgid "Welcome to [B][COLOR blue]Stream Cinema Community[/COLOR][/B]"
+msgstr "Vitajte v [B][COLOR blue]Stream Cinema Community[/COLOR][/B]"
+
+msgctxt "#30601"
+msgid "Before we launch you on your virtual expedition full of fun and adventure, we will guide you through a short setup to make your journey as comfortable as possible."
+msgstr "Predtým, ako vás vypustíme na vašu virtuálnu výpravu plnú zábavy a dobrodružstva, prevedieme vás krátkym nastavením, aby vaša cesta bola čo najpohodlnejšia."
+
+msgctxt "#30602"
+msgid "Language settings"
+msgstr "Nastavenie jazyka"
+
+msgctxt "#30603"
+msgid "First we will go through the language settings together. You have two languages available. [B]Preferred[/B] and [B]Fallback[/B]. These affect the audio track markings next to the movie title, as well as the [B]New dubbed releases[/B] section. A fallback language is not required, but will allow you to view content if it is not available in your preferred language."
+msgstr "Najprv si spolu prejdeme jazykové nastavenia. K dispozícii máte dva jazyky. Preferovaný a Záložný. Tie ovplyvňujú značenie audio stôp u názvov filmov a tiež sekciu Novinky dabované. Záložný nie je povinný, ale umožní vám zobraziť obsah, ak nie je dostupný v preferovanom jazyku."
+
+msgctxt "#30604"
+msgid "Subtitles settings"
+msgstr "Nastavenia titulkov"
+
+msgctxt "#30605"
+msgid "Next we have subtitle settings. For every movie that lacks subtitles we will try to find them for you. But in order to do that, we need some information from you. This feature requires [B]OpenSubtitles.org[/B] account. Are you interested?"
+msgstr "Ďalej tu máme nastavenia titulkov. Pre každý film, ktorému chýbajú titulky, sa ich pokúsime dohladať za vás. Aby sme to mohli urobiť, potrebujeme od vás pár údajov. Táto funkcia vyžaduje [B]OpenSubtitles.org[/B] účet. Máte záujem?"
+
+msgctxt "#30606"
+msgid "Please enter your login for OpenSubtitles.org"
+msgstr "Prosím, zadajte svoje prihlasovacie údaje pre OpenSubtitles.org"
+
+msgctxt "#30607"
+msgid "Now just choose subtitles language you prefer"
+msgstr "Teraz už len vyberte jazyk titulkov, ktorý preferujete"
+
+msgctxt "#30608"
+msgid "And a fallback language if the preferred one isn't available"
+msgstr "A jazyk do zálohy, ak by preferovaný nebol dostupný."
+
+msgctxt "#30609"
+msgid "Provider settings"
+msgstr "Nastavenia poskytovateľa"
+
+msgctxt "#30610"
+msgid "To watch the content, you need to have a VIP account on Webshare.cz. Therefore, we will ask you to enter your login details."
+msgstr "Pre sledovanie obsahu potrebujete mať vedený VIP úcet na Webshare.cz. Preto vás poprosíme o zadanie prihlasovacích údajov."
+
+msgctxt "#30611"
+msgid "Search function"
+msgstr "Funkcia hľadania"
+
+msgctxt "#30612"
+msgid "We spend most of our time developing the Search feature. We are still trying to improve it and it already allows to mixed according to many criteria. You can find films not only by title but also by your favorite actor or studio, or perhaps a role, director or author, or even all their combinations together. Just separate the mixed terms with a comma."
+msgstr "Najviac času venujeme funkcii hľadania. Stále sa ju snažíme zdokonaľovať a už teraz umožňuje hľadať podľa mnohých kritérií. Môžete nájsť filmy nie len podľa názvu, ale aj podľa svojho obľúbeného herca,  štúdia či role alebo rovno kombináciou všetkých dohromady. Hľadané frázy stačí oddeliť čiarkou"
+
+msgctxt "#30613"
+msgid "And we're done ..."
+msgstr "A sme na konci ..."
+
+msgctxt "#30614"
+msgid "Finally, we would like to thank you very much for installing this plugin. We hope that it does not disappoint you and that you will be sufficiently supplied with entertainment for every evening. The introduction is over and we wish you a lot of fun."
+msgstr "Na záver vám chceme veľmi poďakovať, že ste si nainštalovali tento plugin. Dúfame, že vás nesklame a že budete dostatočne zásobovaní zábavou na každý večer. Úvod je na konci a my vám prajeme príjemnú zábavu."
+
+msgctxt "#30615"
+msgid "Keep history of played items"
+msgstr "História prehrávaných položiek"
+
+msgctxt "#30616"
+msgid "Delete item from history"
+msgstr "Zmazať položku z histórie"
+
+msgctxt "#30617"
+msgid "Delete history of played items"
+msgstr "Zmazať históriu prehrávaných položiek"
+
+msgctxt "#30618"
+msgid "History of played items deleted"
+msgstr "História prehrávaných položiek bola zmazaná"
+
+msgctxt "#30619"
+msgid "Download"
+msgstr "Stiahnuť"
+
+msgctxt "#30620"
+msgid "Download directory"
+msgstr "Adresár pre sťahovanie"
+
+msgctxt "#30621"
+msgid "Download directory not set, please set it in the settings first"
+msgstr ""
+
+msgctxt "#30622"
+msgid "Downloads"
+msgstr "Sťahovanie"
+
+msgctxt "#30623"
+msgid "Notify every X percent"
+msgstr "Notifikovať každých X percent"
+
+msgctxt "#30624"
+msgid "Delete"
+msgstr "Zmazať"
+
+msgctxt "#30625"
+msgid "Cancel download"
+msgstr "Zrušiť sťahovanie"
+
+msgctxt "#30626"
+msgid "Pause download"
+msgstr "Pozastaviť sťahovanie"
+
+msgctxt "#30627"
+msgid "Resume download"
+msgstr "Pokračovať v sťahovaní"
+
+msgctxt "#30628"
+msgid "Download again"
+msgstr "Stiahnuť znova"
+
+msgctxt "#30629"
+msgid "Clear history"
+msgstr "Vymazať históriu"
+
+msgctxt "#30630"
+msgid "Entire history"
+msgstr "Celá história"
+
+msgctxt "#30631"
+msgid "Integrate SCC with Library"
+msgstr "Integrovať SCC s knižnicou"
+
+msgctxt "#30632"
+msgid "Automatically update library when item added"
+msgstr "Aktualizovať knižnicu po pridaní SCC položky"
+
+msgctxt "#30633"
+msgid "Searching subtitles"
+msgstr "Hľadám titulky"
+
+msgctxt "#30634"
+msgid "Subtitles found"
+msgstr "Titulky nájdené"
+
+msgctxt "#30635"
+msgid "Subtitles not found"
+msgstr "Titulky nenájdené"
+
+msgctxt "#30636"
+msgid "on"
+msgstr "na"
+
+msgctxt "#30637"
+msgid "Download slots"
+msgstr "Počet súbežných sťahovaní"
+
+msgctxt "#30638"
+msgid "Subtitle search"
+msgstr "Vyhľadanie titulkov"
+
+msgctxt "#30639"
+msgid "Delete All"
+msgstr "Vymazať všetko"
+
+msgctxt "#30640"
+msgid "Clean Downloads DB "
+msgstr "Vyčistiť DB sťahovania"
+
+msgctxt "#30641"
+msgid "Pause Downloads queue"
+msgstr "Pozastaviť frontu sťahovania"
+
+msgctxt "#30642"
+msgid "Resume Downloads queue"
+msgstr "Obnoviť frontu sťahovania"
+
+msgctxt "#30643"
+msgid "Enable Stream Autoselect for Download"
+msgstr "Automatický výber streamu pre sťahovanie"
+
+msgctxt "#30644"
+msgid "Use paths from Library settings"
+msgstr "Použiť cesty z nastavenia Knižnice"
+
+msgctxt "#30645"
+msgid "Prefer video codecs"
+msgstr "Preferovat vyjmenované kodeky"
+
+msgctxt "#30646"
+msgid "Streams 2"
+msgstr "Streamy 2"
+
+msgctxt "#30647"
+msgid "Priority (weight)"
+msgstr "Priorita (váha)"
+
+msgctxt "#30648"
+msgid "Prefer languages setuped in SCC"
+msgstr "Preferovať jazyky nastavené v SCC"
+
+msgctxt "#30649"
+msgid "Prefer included subtitles"
+msgstr "Preferovať vložené titulky"
+
+msgctxt "#30650"
+msgid "Maximal bitrate"
+msgstr "Maximálný bitrate"
+
+msgctxt "#30651"
+msgid "Video quality"
+msgstr "Kvalita videa"
+
+msgctxt "#30652"
+msgid "Languages setuped in SCC"
+msgstr "Jazyky nastavené v SCC"
+
+msgctxt "#30653"
+msgid "Included subtitles"
+msgstr "Vložené titulky"
+
+msgctxt "#30654"
+msgid "Preferred codecs"
+msgstr "Preferované kodeky"
+
+msgctxt "#30655"
+msgid "Prefer specific properties"
+msgstr "Preferovať špecifické vlastnosti"
+
+msgctxt "#30656"
+msgid "Avoid specific properties"
+msgstr "Nepoužívať špecifické vlastnosti"
+
+msgctxt "#30657"
+msgid "Preferred properties"
+msgstr "Preferované vlastnosti"
+
+msgctxt "#30658"
+msgid "News subbed"
+msgstr "Novinky s vloženými titulkami"
+
+msgctxt "#30659"
+msgid "Enable News with subtitles category"
+msgstr "Povoliť kategóriu [B]Novinky s titulkami[/B]"
+
+msgctxt "#30660"
+msgid "Maximum age of [B]New subbed releases[/B] in days"
+msgstr "Maximálny vek [B]Noviniek s titulkami[/B] v dňoch"
+
+msgctxt "#30661"
+msgid "Show HEVC streams"
+msgstr "Zobraziť HEVC streamy"
+
+msgctxt "#30662"
+msgid "SCC ID for tvshow [B][COLOR blue]{0}[/COLOR][/B] in Library is invalid. Add this tvshow [B]again[/B] please."
+msgstr "SCC ID seriálu [B][COLOR blue]{0}[/COLOR][/B] v knižnici je neplatné. Pridajte prosím seriál do knižnice [B]znova[/B]"
+
+msgctxt "#30663"
+msgid "Warning"
+msgstr "Varovanie"
+
+msgctxt "#30664"
+msgid "Automatically switch video language to these if available"
+msgstr "Automaticky prepnúť video na tieto jazyky, ak sú dostupné"
+
+msgctxt "#30665"
+msgid "For exotic alphabets use english title instead"
+msgstr "Pre exotické abecedy použiť anglický názov"
+
+msgctxt "#30666"
+msgid "Automatically play when only one stream is available"
+msgstr "Automaticky prehrať v prípade jediného streamu"
+
+msgctxt "#30667"
+msgid "If more streams have highest score, choose first from them"
+msgstr "Pokiaľ má najvyššiu váhu viac streamov, zvoliť prvý z nich"
+
+msgctxt "#30668"
+msgid "Dolby Vision"
+msgstr "DV"
+
+msgctxt "#31000"
+msgid "Algeria"
+msgstr "Alžírsko"
+
+msgctxt "#31001"
+msgid "Argentina"
+msgstr "Argentína"
+
+msgctxt "#31002"
+msgid "Armenia"
+msgstr "Arménsko"
+
+msgctxt "#31003"
+msgid "Aruba"
+msgstr "Aruba"
+
+msgctxt "#31004"
+msgid "Australia"
+msgstr "Austrália"
+
+msgctxt "#31005"
+msgid "Austria"
+msgstr "Rakúsko"
+
+msgctxt "#31006"
+msgid "Azerbaijan"
+msgstr "Azerbajdžan"
+
+msgctxt "#31007"
+msgid "Bahamas"
+msgstr "Bahamy"
+
+msgctxt "#31008"
+msgid "Bangladesh"
+msgstr "Bangladéš"
+
+msgctxt "#31009"
+msgid "Belarus"
+msgstr "Bielorusko"
+
+msgctxt "#31010"
+msgid "Belgium"
+msgstr "Belgicko"
+
+msgctxt "#31011"
+msgid "Bhutan"
+msgstr "Bhután"
+
+msgctxt "#31012"
+msgid "Bolivia"
+msgstr "Bolívia"
+
+msgctxt "#31013"
+msgid "Bosnia and Herzegovina"
+msgstr "Bosna a Hercegovina"
+
+msgctxt "#31014"
+msgid "Botswana"
+msgstr "Botswana"
+
+msgctxt "#31015"
+msgid "Brazil"
+msgstr "Brazília"
+
+msgctxt "#31016"
+msgid "Brunei"
+msgstr "Brunei"
+
+msgctxt "#31017"
+msgid "Bulgaria"
+msgstr "Bulharsko"
+
+msgctxt "#31018"
+msgid "Cambodia"
+msgstr "Kambodža"
+
+msgctxt "#31019"
+msgid "Canada"
+msgstr "Kanada"
+
+msgctxt "#31020"
+msgid "Chile"
+msgstr "Čile"
+
+msgctxt "#31021"
+msgid "China"
+msgstr "Čína"
+
+msgctxt "#31022"
+msgid "Colombia"
+msgstr "Kolumbia"
+
+msgctxt "#31023"
+msgid "Costa Rica"
+msgstr "Kostarika"
+
+msgctxt "#31024"
+msgid "Croatia"
+msgstr "Chorvátsko"
+
+msgctxt "#31025"
+msgid "Cuba"
+msgstr "Kuba"
+
+msgctxt "#31026"
+msgid "Cyprus"
+msgstr "Cyprus"
+
+msgctxt "#31027"
+msgid "Czechia"
+msgstr "Česko"
+
+msgctxt "#31028"
+msgid "Czechoslovakia"
+msgstr "Československo"
+
+msgctxt "#31029"
+msgid "Democratic Republic of the Congo"
+msgstr "Konžská demokratická republika"
+
+msgctxt "#31030"
+msgid "Denmark"
+msgstr "Dánsko"
+
+msgctxt "#31031"
+msgid "Dominican republic"
+msgstr "Dominikánska republika"
+
+msgctxt "#31032"
+msgid "East Germany"
+msgstr "Východné Nemecko"
+
+msgctxt "#31033"
+msgid "Egypt"
+msgstr "Egypt"
+
+msgctxt "#31034"
+msgid "Estonia"
+msgstr "Estónsko"
+
+msgctxt "#31035"
+msgid "Fed. Rep. Yugoslavia"
+msgstr "Fed. Rep. Juhoslávia"
+
+msgctxt "#31036"
+msgid "Finland"
+msgstr "Fínsko"
+
+msgctxt "#31037"
+msgid "France"
+msgstr "Francúzsko"
+
+msgctxt "#31038"
+msgid "French Polynesia"
+msgstr "Francúzská Polynézia"
+
+msgctxt "#31039"
+msgid "Georgia"
+msgstr "Georgia"
+
+msgctxt "#31040"
+msgid "German Empire"
+msgstr "Nemecká ríša"
+
+msgctxt "#31041"
+msgid "Germany"
+msgstr "Nemecko"
+
+msgctxt "#31042"
+msgid "Ghana"
+msgstr "Ghana"
+
+msgctxt "#31043"
+msgid "Greece"
+msgstr "Grécko"
+
+msgctxt "#31044"
+msgid "Haiti"
+msgstr "Haiti"
+
+msgctxt "#31045"
+msgid "Hong Kong"
+msgstr "Hong Kong"
+
+msgctxt "#31046"
+msgid "Hungary"
+msgstr "Maďarsko"
+
+msgctxt "#31047"
+msgid "Iceland"
+msgstr "Island"
+
+msgctxt "#31048"
+msgid "India"
+msgstr "India"
+
+msgctxt "#31049"
+msgid "Indonesia"
+msgstr "Indonézia"
+
+msgctxt "#31050"
+msgid "Iran"
+msgstr "Irán"
+
+msgctxt "#31051"
+msgid "Iraq"
+msgstr "Irak"
+
+msgctxt "#31052"
+msgid "Ireland"
+msgstr "Írsko"
+
+msgctxt "#31053"
+msgid "Israel"
+msgstr "Izrael"
+
+msgctxt "#31054"
+msgid "Italy"
+msgstr "Taliansko"
+
+msgctxt "#31055"
+msgid "Jamaica"
+msgstr "Jamaika"
+
+msgctxt "#31056"
+msgid "Japan"
+msgstr "Japonsko"
+
+msgctxt "#31057"
+msgid "Jordan"
+msgstr "Jordán"
+
+msgctxt "#31058"
+msgid "Kazakhstan"
+msgstr "Kazachstan"
+
+msgctxt "#31059"
+msgid "Kenya"
+msgstr "Keňa"
+
+msgctxt "#31060"
+msgid "Laos"
+msgstr "Laos"
+
+msgctxt "#31061"
+msgid "Latvia"
+msgstr "Lotyšsko"
+
+msgctxt "#31062"
+msgid "Lebanon"
+msgstr "Libanon"
+
+msgctxt "#31063"
+msgid "Lichtenstein"
+msgstr "Lichtenštajnsko"
+
+msgctxt "#31064"
+msgid "Lithuania"
+msgstr "Litva"
+
+msgctxt "#31065"
+msgid "Luxembourg"
+msgstr "Luxembursko"
+
+msgctxt "#31066"
+msgid "Macao"
+msgstr "Makao"
+
+msgctxt "#31067"
+msgid "Macedonia"
+msgstr "Macedónsko"
+
+msgctxt "#31068"
+msgid "Malaysia"
+msgstr "Malajzia"
+
+msgctxt "#31069"
+msgid "Malta"
+msgstr "Malta"
+
+msgctxt "#31070"
+msgid "Mexico"
+msgstr "Mexiko"
+
+msgctxt "#31071"
+msgid "Monaco"
+msgstr "Monako"
+
+msgctxt "#31072"
+msgid "Mongolia"
+msgstr "Mongolsko"
+
+msgctxt "#31073"
+msgid "Montenegro"
+msgstr "Čierna Hora"
+
+msgctxt "#31074"
+msgid "Morocco"
+msgstr "Maroko"
+
+msgctxt "#31075"
+msgid "Namibia"
+msgstr "Namíbia"
+
+msgctxt "#31076"
+msgid "Nepal"
+msgstr "Nepál"
+
+msgctxt "#31077"
+msgid "Netherlands"
+msgstr "Holandsko"
+
+msgctxt "#31078"
+msgid "New Zealand"
+msgstr "Nový Zéland"
+
+msgctxt "#31079"
+msgid "Nigeria"
+msgstr "Nigéria"
+
+msgctxt "#31080"
+msgid "North Korea"
+msgstr "Severná Kórea"
+
+msgctxt "#31081"
+msgid "Norway"
+msgstr "Nórsko"
+
+msgctxt "#31082"
+msgid "Pakistan"
+msgstr "Pakistan"
+
+msgctxt "#31083"
+msgid "Palestine"
+msgstr "Palestína"
+
+msgctxt "#31084"
+msgid "Panama"
+msgstr "Panama"
+
+msgctxt "#31085"
+msgid "Papua New Guinea"
+msgstr "Papua Nová Guinea"
+
+msgctxt "#31086"
+msgid "Paraguay"
+msgstr "Paraguaj"
+
+msgctxt "#31087"
+msgid "Peru"
+msgstr "Peru"
+
+msgctxt "#31088"
+msgid "Philippines"
+msgstr "Filipíny"
+
+msgctxt "#31089"
+msgid "Poland"
+msgstr "Poľsko"
+
+msgctxt "#31090"
+msgid "Portugal"
+msgstr "Portugalsko"
+
+msgctxt "#31091"
+msgid "Puerto Rico"
+msgstr "Portoriko"
+
+msgctxt "#31092"
+msgid "Qatar"
+msgstr "Qatar"
+
+msgctxt "#31093"
+msgid "Romania"
+msgstr "Rumunsko"
+
+msgctxt "#31094"
+msgid "Russia"
+msgstr "Rusko"
+
+msgctxt "#31095"
+msgid "Saudi Arabia"
+msgstr "Saudská Arábia"
+
+msgctxt "#31096"
+msgid "Senegal"
+msgstr "Senegal"
+
+msgctxt "#31097"
+msgid "Serbia"
+msgstr "Srbsko"
+
+msgctxt "#31098"
+msgid "Serbia and Montenegro"
+msgstr "Srbsko a Čierna Hora"
+
+msgctxt "#31099"
+msgid "Singapore"
+msgstr "Singapur"
+
+msgctxt "#31100"
+msgid "Slovakia"
+msgstr "Slovensko"
+
+msgctxt "#31101"
+msgid "Slovenia"
+msgstr "Slovinsko"
+
+msgctxt "#31102"
+msgid "South African Republic"
+msgstr "Juhoafrická republika"
+
+msgctxt "#31103"
+msgid "South Korea"
+msgstr "Južná Kórea"
+
+msgctxt "#31104"
+msgid "Spain"
+msgstr "Španielsko"
+
+msgctxt "#31105"
+msgid "Sweden"
+msgstr "Švédsko"
+
+msgctxt "#31106"
+msgid "Switzerland"
+msgstr "Švajčiarsko"
+
+msgctxt "#31107"
+msgid "Syria"
+msgstr "Sýria"
+
+msgctxt "#31108"
+msgid "Taiwan"
+msgstr "Taiwan"
+
+msgctxt "#31109"
+msgid "Tanzania"
+msgstr "Tanzánia"
+
+msgctxt "#31110"
+msgid "Thailand"
+msgstr "Thajsko"
+
+msgctxt "#31111"
+msgid "The Soviet Union"
+msgstr "Sovietsky zväz"
+
+msgctxt "#31112"
+msgid "Tunisia"
+msgstr "Tunisko"
+
+msgctxt "#31113"
+msgid "Turkey"
+msgstr "Turecko"
+
+msgctxt "#31114"
+msgid "Uganda"
+msgstr "Uganda"
+
+msgctxt "#31115"
+msgid "Ukraine"
+msgstr "Ukrajina"
+
+msgctxt "#31116"
+msgid "United Arab Emirates"
+msgstr "Spojené arabské emiráty"
+
+msgctxt "#31117"
+msgid "United Kingdom"
+msgstr "Spojené kráľovstvo"
+
+msgctxt "#31118"
+msgid "United States of America"
+msgstr "Spojené štáty americké"
+
+msgctxt "#31119"
+msgid "Uruguay"
+msgstr "Uruguaj"
+
+msgctxt "#31120"
+msgid "Venezuela"
+msgstr "Venezuela"
+
+msgctxt "#31121"
+msgid "Vietnam"
+msgstr "Vietnam"
+
+msgctxt "#31122"
+msgid "West Germany"
+msgstr "Západné Nemecko"
+
+msgctxt "#31123"
+msgid "Yugoslavia"
+msgstr "Juhoslávia"
+
+msgctxt "#31124"
+msgid "Zimbabwe"
+msgstr "Zimbabwe"
+
+msgctxt "#31125"
+msgid "Albania"
+msgstr "Albánsko"
+
+msgctxt "#32000"
+msgid "Afar"
+msgstr "Afarčina"
+
+msgctxt "#32001"
+msgid "Abkhazian"
+msgstr "Abcházština"
+
+msgctxt "#32002"
+msgid "Afrikaans"
+msgstr "Afrikánčina"
+
+msgctxt "#32003"
+msgid "Amharic"
+msgstr "Amharčina"
+
+msgctxt "#32004"
+msgid "Arabic"
+msgstr "Arabčina"
+
+msgctxt "#32005"
+msgid "Assamese"
+msgstr "Ásámčina"
+
+msgctxt "#32006"
+msgid "Aymara"
+msgstr "Aymarčina"
+
+msgctxt "#32007"
+msgid "Azerbaijani"
+msgstr "Azerbajdžančina"
+
+msgctxt "#32008"
+msgid "Bashkir"
+msgstr "Baškirčina"
+
+msgctxt "#32009"
+msgid "Byelorussian"
+msgstr "Bieloruština"
+
+msgctxt "#32010"
+msgid "Bulgarian"
+msgstr "Bulharčina"
+
+msgctxt "#32011"
+msgid "Bihari"
+msgstr "Bihárčina"
+
+msgctxt "#32012"
+msgid "Bislama"
+msgstr "Bislamčina"
+
+msgctxt "#32013"
+msgid "Bengali; Bangla"
+msgstr "Bengálčina"
+
+msgctxt "#32014"
+msgid "Tibetan"
+msgstr "Tibetčina"
+
+msgctxt "#32015"
+msgid "Breton"
+msgstr "Bretónčina"
+
+msgctxt "#32016"
+msgid "Catalan"
+msgstr "Katalánčina"
+
+msgctxt "#32017"
+msgid "Corsican"
+msgstr "Korzičtina"
+
+msgctxt "#32018"
+msgid "Czech"
+msgstr "Čeština"
+
+msgctxt "#32019"
+msgid "Welsh"
+msgstr "Waleština"
+
+msgctxt "#32020"
+msgid "Danish"
+msgstr "Dánčina"
+
+msgctxt "#32021"
+msgid "German"
+msgstr "Nemčina"
+
+msgctxt "#32022"
+msgid "Bhutani"
+msgstr "Dzongkha"
+
+msgctxt "#32023"
+msgid "Greek"
+msgstr "Gréčtina"
+
+msgctxt "#32024"
+msgid "English"
+msgstr "Angličtina"
+
+msgctxt "#32025"
+msgid "Esperanto"
+msgstr "Esperanto"
+
+msgctxt "#32026"
+msgid "Spanish"
+msgstr "Španielčina"
+
+msgctxt "#32027"
+msgid "Estonian"
+msgstr "Estónčina"
+
+msgctxt "#32028"
+msgid "Basque"
+msgstr "Baskičtina"
+
+msgctxt "#32029"
+msgid "Persian"
+msgstr "Perzština"
+
+msgctxt "#32030"
+msgid "Finnish"
+msgstr "Fínčina"
+
+msgctxt "#32031"
+msgid "Fiji"
+msgstr "Fidžijčina"
+
+msgctxt "#32032"
+msgid "Faeroese"
+msgstr "Faerčina"
+
+msgctxt "#32033"
+msgid "French"
+msgstr "Francúzština"
+
+msgctxt "#32034"
+msgid "Frisian"
+msgstr "Fríština"
+
+msgctxt "#32035"
+msgid "Irish"
+msgstr "Írčina"
+
+msgctxt "#32036"
+msgid "Scots Gaelic"
+msgstr "Škótska gaelčina"
+
+msgctxt "#32037"
+msgid "Galician"
+msgstr "Galícijčina"
+
+msgctxt "#32038"
+msgid "Guarani"
+msgstr "Guaraníjčina"
+
+msgctxt "#32039"
+msgid "Gujarati"
+msgstr "Gujarati"
+
+msgctxt "#32040"
+msgid "Hausa"
+msgstr "Hauština"
+
+msgctxt "#32041"
+msgid "Hebrew"
+msgstr "Hebrejčina"
+
+msgctxt "#32042"
+msgid "Hindi"
+msgstr "Hindčina"
+
+msgctxt "#32043"
+msgid "Croatian"
+msgstr "Chorvátčina"
+
+msgctxt "#32044"
+msgid "Hungarian"
+msgstr "Maďarčina"
+
+msgctxt "#32045"
+msgid "Armenian"
+msgstr "Arménčina"
+
+msgctxt "#32046"
+msgid "Interlingua"
+msgstr "Interlingua"
+
+msgctxt "#32047"
+msgid "Indonesian"
+msgstr "Indonézština"
+
+msgctxt "#32048"
+msgid "Interlingue"
+msgstr "Interlingue"
+
+msgctxt "#32049"
+msgid "Inupiak"
+msgstr "Inupiaq"
+
+msgctxt "#32050"
+msgid "Icelandic"
+msgstr "Islandčina"
+
+msgctxt "#32051"
+msgid "Italian"
+msgstr "Taliančina"
+
+msgctxt "#32052"
+msgid "Japanese"
+msgstr "Japončina"
+
+msgctxt "#32053"
+msgid "Yiddish"
+msgstr "Jidiš"
+
+msgctxt "#32054"
+msgid "Javanese"
+msgstr "Javánština"
+
+msgctxt "#32055"
+msgid "Georgian"
+msgstr "Gruzínčina"
+
+msgctxt "#32056"
+msgid "Kazakh"
+msgstr "Kazaština"
+
+msgctxt "#32057"
+msgid "Greenlandic"
+msgstr "Grónčina"
+
+msgctxt "#32058"
+msgid "Cambodian"
+msgstr "Khmérčina"
+
+msgctxt "#32059"
+msgid "Kannada"
+msgstr "Kannadčina"
+
+msgctxt "#32060"
+msgid "Korean"
+msgstr "Kórejčina"
+
+msgctxt "#32061"
+msgid "Kashmiri"
+msgstr "Kašmírčina"
+
+msgctxt "#32062"
+msgid "Kurdish"
+msgstr "Kurdčina"
+
+msgctxt "#32063"
+msgid "Kirghiz"
+msgstr "Kirgizština"
+
+msgctxt "#32064"
+msgid "Latin"
+msgstr "Latinčina"
+
+msgctxt "#32065"
+msgid "Lingala"
+msgstr "Lingalčina"
+
+msgctxt "#32066"
+msgid "Laothian"
+msgstr "Laoština"
+
+msgctxt "#32067"
+msgid "Lithuanian"
+msgstr "Litovčina"
+
+msgctxt "#32068"
+msgid "Latvian, Lettish"
+msgstr "Lotyština"
+
+msgctxt "#32069"
+msgid "Malagasy"
+msgstr "Malgaština"
+
+msgctxt "#32070"
+msgid "Maori"
+msgstr "Maorčina"
+
+msgctxt "#32071"
+msgid "Macedonian"
+msgstr "Macedónčina"
+
+msgctxt "#32072"
+msgid "Malayalam"
+msgstr "Malajálamčina"
+
+msgctxt "#32073"
+msgid "Mongolian"
+msgstr "Mongolčina"
+
+msgctxt "#32074"
+msgid "Moldavian"
+msgstr "Moldavčina"
+
+msgctxt "#32075"
+msgid "Marathi"
+msgstr "Maráthčina"
+
+msgctxt "#32076"
+msgid "Malay"
+msgstr "Malajčina"
+
+msgctxt "#32077"
+msgid "Maltese"
+msgstr "Maltčina"
+
+msgctxt "#32078"
+msgid "Burmese"
+msgstr "Barmčina"
+
+msgctxt "#32079"
+msgid "Nauru"
+msgstr "Nauru"
+
+msgctxt "#32080"
+msgid "Nepali"
+msgstr "Nepálčina"
+
+msgctxt "#32081"
+msgid "Dutch"
+msgstr "Holandčina"
+
+msgctxt "#32082"
+msgid "Norwegian"
+msgstr "Nórčina"
+
+msgctxt "#32083"
+msgid "Occitan"
+msgstr "Okcitánčina"
+
+msgctxt "#32084"
+msgid "(Afan) Oromo"
+msgstr "Oromčina"
+
+msgctxt "#32085"
+msgid "Oriya"
+msgstr "Orijčina"
+
+msgctxt "#32086"
+msgid "Punjabi"
+msgstr "Pandžábčina"
+
+msgctxt "#32087"
+msgid "Polish"
+msgstr "Poľština"
+
+msgctxt "#32088"
+msgid "Pashto, Pushto"
+msgstr "Paštčina"
+
+msgctxt "#32089"
+msgid "Portuguese"
+msgstr "Portugalčina"
+
+msgctxt "#32090"
+msgid "Quechua"
+msgstr "Kečuánčina"
+
+msgctxt "#32091"
+msgid "Rhaeto-Romance"
+msgstr "Rétorománske jazyky"
+
+msgctxt "#32092"
+msgid "Kirundi"
+msgstr "Bantuské jazyky"
+
+msgctxt "#32093"
+msgid "Romanian"
+msgstr "Rumunčina"
+
+msgctxt "#32094"
+msgid "Russian"
+msgstr "Ruština"
+
+msgctxt "#32095"
+msgid "Kinyarwanda"
+msgstr "Rwandčina"
+
+msgctxt "#32096"
+msgid "Sanskrit"
+msgstr "Sanskrit"
+
+msgctxt "#32097"
+msgid "Sindhi"
+msgstr "Sindhi Sindhi"
+
+msgctxt "#32098"
+msgid "Sangro"
+msgstr "Sangro"
+
+msgctxt "#32099"
+msgid "Serbo-Croatian"
+msgstr "Srbochorvátčina"
+
+msgctxt "#32100"
+msgid "Singhalese"
+msgstr "Sinhalčina"
+
+msgctxt "#32101"
+msgid "Slovak"
+msgstr "Slovenčina"
+
+msgctxt "#32102"
+msgid "Slovenian"
+msgstr "Slovinčina"
+
+msgctxt "#32103"
+msgid "Samoan"
+msgstr "Samojčina"
+
+msgctxt "#32104"
+msgid "Shona"
+msgstr "Shona"
+
+msgctxt "#32105"
+msgid "Somali"
+msgstr "Somálčina"
+
+msgctxt "#32106"
+msgid "Albanian"
+msgstr "Albánčina"
+
+msgctxt "#32107"
+msgid "Serbian"
+msgstr "Srbčina"
+
+msgctxt "#32108"
+msgid "Siswati"
+msgstr "Siswati"
+
+msgctxt "#32109"
+msgid "Sesotho"
+msgstr "Sesotho"
+
+msgctxt "#32110"
+msgid "Sundanese"
+msgstr "Sunda"
+
+msgctxt "#32111"
+msgid "Swedish"
+msgstr "Švédčina"
+
+msgctxt "#32112"
+msgid "Swahili"
+msgstr "Svahilčina"
+
+msgctxt "#32113"
+msgid "Tamil"
+msgstr "Tamilčina"
+
+msgctxt "#32114"
+msgid "Tegulu"
+msgstr "Tegulu"
+
+msgctxt "#32115"
+msgid "Tajik"
+msgstr "Tadžičtina"
+
+msgctxt "#32116"
+msgid "Thai"
+msgstr "Thajčina"
+
+msgctxt "#32117"
+msgid "Tigrinya"
+msgstr "Tigrejčina"
+
+msgctxt "#32118"
+msgid "Turkmen"
+msgstr "Turkménčina"
+
+msgctxt "#32119"
+msgid "Tagalog"
+msgstr "Tagalčina"
+
+msgctxt "#32120"
+msgid "Setswana"
+msgstr "Setswana"
+
+msgctxt "#32121"
+msgid "Tonga"
+msgstr "Tongčina"
+
+msgctxt "#32122"
+msgid "Turkish"
+msgstr "Turečtina"
+
+msgctxt "#32123"
+msgid "Tsonga"
+msgstr "Tsonga"
+
+msgctxt "#32124"
+msgid "Tatar"
+msgstr "Tatárčina"
+
+msgctxt "#32125"
+msgid "Twi"
+msgstr "Twi"
+
+msgctxt "#32126"
+msgid "Ukrainian"
+msgstr "Ukrajinčina"
+
+msgctxt "#32127"
+msgid "Urdu"
+msgstr "Urdčina"
+
+msgctxt "#32128"
+msgid "Uzbek"
+msgstr "Uzbečtina"
+
+msgctxt "#32129"
+msgid "Vietnamese"
+msgstr "Vietnamčina"
+
+msgctxt "#32130"
+msgid "Volapuk"
+msgstr "Volapük"
+
+msgctxt "#32131"
+msgid "Wolof"
+msgstr "Wolof"
+
+msgctxt "#32132"
+msgid "Xhosa"
+msgstr "Xhosa"
+
+msgctxt "#32133"
+msgid "Yoruba"
+msgstr "Yoruba"
+
+msgctxt "#32134"
+msgid "Chinese"
+msgstr "Čínština"
+
+msgctxt "#32135"
+msgid "Zulu"
+msgstr "Zuluština"
+
+msgctxt "#32136"
+msgid "Bosnian"
+msgstr "Bosniančina"
+
+msgctxt "#32137"
+msgid "Inuktitut"
+msgstr "Inuitčina"
+
+msgctxt "#32138"
+msgid "No Language"
+msgstr "Žiadny jazyk"
+
+msgctxt "#32139"
+msgid "Show progress bar"
+msgstr "Zobraziť ukazovateľ priebehu"
+
+msgctxt "#32140"
+msgid "Media type"
+msgstr "Typ média"
+
+msgctxt "#32141"
+msgid "All"
+msgstr "Všetko"
+
+msgctxt "#32142"
+msgid "Compatible progress bar"
+msgstr "Kompatibilný ukazovateľ priebehu"
+
+msgctxt "#32143"
+msgid "Copy the code from the image"
+msgstr "Skopírujte kód z obrázka"
+
+msgctxt "#32144"
+msgid "Automatic subtitles search"
+msgstr "Automatické hľadanie titulkov"
+
+msgctxt "#32145"
+msgid "OpenSubtitles.org"
+msgstr ""
+
+msgctxt "#32146"
+msgid "Titulky.com"
+msgstr ""
+
+msgctxt "#32147"
+msgid "Update in progress..."
+msgstr "Prebieha aktualizácia..."
+
+msgctxt "#32148"
+msgid "Plugin is unavailable during update."
+msgstr "Doplnok nie je počas aktualizácie k dispozícii."
+
+msgctxt "#32149"
+msgid "Auto playback"
+msgstr "Automatické prehrávanie"
+
+msgctxt "#32150"
+msgid "Automatic stream selection"
+msgstr "Automatický výber streamu"
+
+msgctxt "#32151"
+msgid "Media ratings priority"
+msgstr "Priorita hodnotení médií"
+
+msgctxt "#32152"
+msgid "CSFD"
+msgstr "ČSFD"
+
+msgctxt "#32153"
+msgid "TMDB"
+msgstr ""
+
+msgctxt "#32154"
+msgid "TVDB"
+msgstr ""
+
+msgctxt "#32155"
+msgid "Trakt"
+msgstr ""
+
+msgctxt "#32156"
+msgid "IMDB"
+msgstr ""
+
+msgctxt "#32157"
+msgid "Metacritic"
+msgstr ""
+
+msgctxt "#32158"
+msgid "Rotten Tomatoes"
+msgstr ""
+
+msgctxt "#32159"
+msgid "Add"
+msgstr "Přidať"
+
+msgctxt "#32160"
+msgid "Restore"
+msgstr "Obnoviť"
+
+msgctxt "#32161"
+msgid "Change"
+msgstr "Změniť"
+
+msgctxt "#32162"
+msgid "Select the source with the most votes"
+msgstr "Vybrať zdroj s najväčším počtom hlasov"
+
+msgctxt "#32163"
+msgid "[B]BETA[/B] WatchSync - watch together"
+msgstr "[B]BETA[/B] WatchSync - sledovať spoločne"
+
+msgctxt "#32164"
+msgid "Code"
+msgstr "Kód"
+
+msgctxt "#32165"
+msgid "Reset"
+msgstr ""
+
+msgctxt "#32166"
+msgid "Everyone is ready. {timeout} seconds to start"
+msgstr "Všetci pripravení. {timeout} sekúnd do začiatku"
+
+msgctxt "#32167"
+msgid "Connected devices: {amount}"
+msgstr "Pripojených zariadení: {amount}"
+
+msgctxt "#32168"
+msgid "Show original title"
+msgstr "Zobraziť pôvodný názov"
+
+msgctxt "#32169"
+msgid "Christmas"
+msgstr "Vianoce"
+
+msgctxt "#32170"
+msgid "Merry Christmas {year}!"
+msgstr "Šťastné a veselé Vianoce {year}!"
+
+msgctxt "#32171"
+msgid "Merry Christmas {year} in our region!"
+msgstr "Šťastné a veselé Vianoce {year} v našom regióne!"
+
+msgctxt "#32172"
+msgid "YouTube"
+msgstr ""
+
+msgctxt "#32173"
+msgid "Unknown"
+msgstr "Neznámy"
+
+msgctxt "#32174"
+msgid "Trailer"
+msgstr "Upútavka"
+
+msgctxt "#32175"
+msgid "Teaser"
+msgstr "Ukážka"
+
+msgctxt "#32176"
+msgid "Quality"
+msgstr "Kvalita"
+
+msgctxt "#32177"
+msgid "Type"
+msgstr "Typ"
+
+msgctxt "#32178"
+msgid "Filters"
+msgstr "Filtre"
+
+msgctxt "#32179"
+msgid "Create new"
+msgstr "Vytvoriť nový"
+
+msgctxt "#32180"
+msgid "Name"
+msgstr "Názov"
+
+msgctxt "#32181"
+msgid "New filter"
+msgstr "Nový filter"
+
+msgctxt "#32182"
+msgid "Title"
+msgstr "Názov"
+
+msgctxt "#32183"
+msgid "Year"
+msgstr "Rok"
+
+msgctxt "#32184"
+msgid "Dubbing language"
+msgstr "Jazyk dabingu"
+
+msgctxt "#32185"
+msgid "Subtitles language"
+msgstr "Jazyk titulkov"
+
+msgctxt "#32186"
+msgid "Sort by"
+msgstr "Zoradené podľa"
+
+msgctxt "#32187"
+msgid "Cast"
+msgstr "Obsadenie"
+
+msgctxt "#32188"
+msgid "Studio"
+msgstr "Štúdio"
+
+msgctxt "#32189"
+msgid "Country"
+msgstr "Krajina"
+
+msgctxt "#32190"
+msgid "and"
+msgstr "a"
+
+msgctxt "#32191"
+msgid "or"
+msgstr "alebo"
+
+msgctxt "#32192"
+msgid "Not"
+msgstr "nie je"
+
+msgctxt "#32193"
+msgid "Condition"
+msgstr "Podmienka"
+
+msgctxt "#32194"
+msgid "and not"
+msgstr "a nie je"
+
+msgctxt "#32195"
+msgid "or not"
+msgstr "alebo nie je"
+
+msgctxt "#32196"
+msgid "equals"
+msgstr "je"
+
+msgctxt "#32197"
+msgid "not equals"
+msgstr "nie je"
+
+msgctxt "#32198"
+msgid "higher than"
+msgstr "je vyšší ako"
+
+msgctxt "#32199"
+msgid "higher or equal"
+msgstr "je vyšší alebo rovný"
+
+msgctxt "#32200"
+msgid "lower than"
+msgstr "je nižší ako"
+
+msgctxt "#32201"
+msgid "lower or equal"
+msgstr "je nižší alebo rovný"
+
+msgctxt "#32202"
+msgid "starts with"
+msgstr "začína na"
+
+msgctxt "#32203"
+msgid "ends with"
+msgstr "končí na"
+
+msgctxt "#32204"
+msgid "contains"
+msgstr "obsahuje"
+
+msgctxt "#32205"
+msgid "does not start with"
+msgstr "nezačína na"
+
+msgctxt "#32206"
+msgid "does not end with"
+msgstr "nekončí na"
+
+msgctxt "#32207"
+msgid "does not contain"
+msgstr "neobsahuje"
+
+msgctxt "#32208"
+msgid "Save"
+msgstr "Uložiť"
+
+msgctxt "#32209"
+msgid "Run at startup"
+msgstr "Spustiť pri štarte"
+
+msgctxt "#32210"
+msgid "Edit"
+msgstr "Upraviť"
+
+msgctxt "#32211"
+msgid "Season"
+msgstr "Séria"
+
+msgctxt "#32212"
+msgid "Episode"
+msgstr "Epizóda"
+
+msgctxt "#32213"
+msgid "Disable cache"
+msgstr "Zakázať medzipameť"
+
+msgctxt "#32214"
+msgid "Add new condition"
+msgstr "Pridať novú podmienku"
+
+msgctxt "#32215"
+msgid "Add new group"
+msgstr "Pridať novú skupinu"
+
+msgctxt "#32216"
+msgid "has"
+msgstr "má"
+
+msgctxt "#32217"
+msgid "does not have"
+msgstr "nemá"
+
+msgctxt "#32218"
+msgid "Movie"
+msgstr "Film"
+
+msgctxt "#32219"
+msgid "TV show"
+msgstr "Seriál"
+
+msgctxt "#32220"
+msgid "Concert"
+msgstr "Koncert"
+
+msgctxt "#32221"
+msgid "Director"
+msgstr "Režisér"
+
+msgctxt "#32222"
+msgid "Writer"
+msgstr "Scenárista"
+
+msgctxt "#32223"
+msgid "Rating"
+msgstr "Hodnotenie"
+
+msgctxt "#32224"
+msgid "Tag"
+msgstr ""
+
+msgctxt "#32225"
+msgid "Add sorting"
+msgstr "Pridať radenie"
+
+msgctxt "#32226"
+msgid "Score"
+msgstr "Skóre"
+
+msgctxt "#32227"
+msgid "Trend"
+msgstr "Trend"
+
+msgctxt "#32228"
+msgid "Popularity"
+msgstr "Popularita"
+
+msgctxt "#32229"
+msgid "Play count"
+msgstr "Počet prehraní"
+
+msgctxt "#32230"
+msgid "Duration"
+msgstr "Doba trvania"
+
+msgctxt "#32231"
+msgid "Date premiered"
+msgstr "Dátum premiéry"
+
+msgctxt "#32232"
+msgid "Date added"
+msgstr "Dátum pridania"
+
+msgctxt "#32233"
+msgid "Latest episode added"
+msgstr "Pridanie poslednej epizódy"
+
+msgctxt "#32234"
+msgid "Latest episode premiered"
+msgstr "Premiéra poslednej epizódy"
+
+msgctxt "#32235"
+msgid "Ascending"
+msgstr "Vzostupne"
+
+msgctxt "#32236"
+msgid "Descending"
+msgstr "Zostupne"
+
+msgctxt "#32237"
+msgid "Sort"
+msgstr "Zoradiť"
+
+msgctxt "#32238"
+msgid "Votes count"
+msgstr "Počet hlasov"
+
+msgctxt "#32239"
+msgid "Rating ČSFD"
+msgstr "Hodnotenie ČSFD"
+
+msgctxt "#32240"
+msgid "Rating TMDB"
+msgstr "Hodnotenie TMDB"
+
+msgctxt "#32241"
+msgid "Rating IMDb"
+msgstr "Hodnotenie IMDb"
+
+msgctxt "#32242"
+msgid "Rating TVDB"
+msgstr "Hodnotenie TVDB"
+
+msgctxt "#32243"
+msgid "Rating Trakt"
+msgstr "Hodnotenie Trakt"
+
+msgctxt "#32244"
+msgid "Rating Metacritic"
+msgstr "Hodnotenie Metacritic"
+
+msgctxt "#32245"
+msgid "Rating Rotten Tomatoes"
+msgstr "Hodnotenie Rotten Tomatoes"
+
+msgctxt "#32246"
+msgid "Votes count ČSFD"
+msgstr "Počet hlasov ČSFD"
+
+msgctxt "#32247"
+msgid "Votes count TMDB"
+msgstr "Počet hlasov TMDB"
+
+msgctxt "#32248"
+msgid "Votes count IMDB"
+msgstr "Počet hlasov IMDB"
+
+msgctxt "#32249"
+msgid "Votes count TVDB"
+msgstr "Počet hlasov TVDB"
+
+msgctxt "#32250"
+msgid "Votes count TRAKT"
+msgstr "Počet hlasov TRAKT"
+
+msgctxt "#32251"
+msgid "Votes count Metacritic"
+msgstr "Počet hlasov Metacritic"
+
+msgctxt "#32252"
+msgid "Votes count Rotten Tomatoes"
+msgstr "Počet hlasov Rotten Tomatoes"
+
+msgctxt "#32253"
+msgid "HDR"
+msgstr ""
+
+msgctxt "#32254"
+msgid "Dolby Vision"
+msgstr ""
+
+msgctxt "#32255"
+msgid "3D"
+msgstr ""
+
+msgctxt "#32256"
+msgid "Show overall rating"
+msgstr "Zobraziť celkové hodnotenie"
+
+msgctxt "#32257"
+msgid "Last episode year"
+msgstr "Rok poslednej epizódy"
+
+msgctxt "#32258"
+msgid "Premiere days from now"
+msgstr "Premiéra dní - od teraz"
+
+msgctxt "#32259"
+msgid "Year days from now"
+msgstr "Rok dní - od teraz"
+
+msgctxt "#32260"
+msgid "Last episode premiere days from now"
+msgstr "Premiéra poslednej epizody - dní od teraz"
+
+msgctxt "#32261"
+msgid "Last episode year days from now"
+msgstr "Rok poslednej epizódy - dní od teraz"
+
+msgctxt "#32262"
+msgid "HDR format"
+msgstr "HDR formát"
+
+msgctxt "#32265"
+msgid "Last stream added"
+msgstr "Pridanie posledného streamu"
+
+msgctxt "#32300"
+msgid "Valentine's Day"
+msgstr "Valentín"
+
+msgctxt "#32301"
+msgid "Spring"
+msgstr "Jar"
+
+msgctxt "#32302"
+msgid "Summer"
+msgstr "Leto"
+
+msgctxt "#32303"
+msgid "Easter"
+msgstr "Veľká noc"
+
+msgctxt "#32304"
+msgid "Autumn"
+msgstr "Jeseň"
+
+msgctxt "#32305"
+msgid "IWD"
+msgstr "MDŽ"
+
+msgctxt "#32306"
+msgid "Spring Break"
+msgstr "Jarné prázdniny"
+
+msgctxt "#32307"
+msgid "Winter"
+msgstr "Zima"
+
+msgctxt "#32308"
+msgid "Movie Club"
+msgstr "Filmový klub"
+
+msgctxt "#32309"
+msgid "Golden Fund"
+msgstr "Zlatý fond"
+
+msgctxt "#32310"
+msgid "Czech and Slovak"
+msgstr "České a slovenské"
+
+msgctxt "#32311"
+msgid "Fairy Tales"
+msgstr "Rozprávky"
+
+msgctxt "#32312"
+msgid "Religious"
+msgstr "Náboženské"
+
+msgctxt "#32400"
+msgid "We wish lots of love to all those in love."
+msgstr "Všetkým zamilovaným prajeme veľa lásky."
+
+msgctxt "#32401"
+msgid "May spring bring you only the best."
+msgstr "Ať vám jaro přinese jen to nejlepší."
+
+msgctxt "#32402"
+msgid "Blessed Easter holidays."
+msgstr "Požehnané veľkonočné sviatky."
+
+msgctxt "#32403"
+msgid "All the best to all the women and girls."
+msgstr "Všetkým ženám a dievčatám všetko najlepšie."
+
+msgctxt "#32404"
+msgid "A lot of rest, joy and experience to all students."
+msgstr "Študentom veľa oddychu, radosti a zážitkov."
+
+msgctxt "#32405"
+msgid "A hot and exciting summer full of well-being."
+msgstr "Horké a vzrušující léto plné pohody."
+
+msgctxt "#32406"
+msgid "Colorful autumn for everyone."
+msgstr "Farebnú jeseň pre všetkých."
+
+msgctxt "#32407"
+msgid "White winter for SCC viewers."
+msgstr "Biela zimu pre divákov SCC."
+
+msgctxt "#32408"
+msgid "Once upon a time..."
+msgstr "Kde bolo, tam bolo..."
+
+msgctxt "#32409"
+msgid "A film for the serious spectator."
+msgstr "Film pre náročného diváka."
+
+msgctxt "#32410"
+msgid "Czechoslovak films until 1992."
+msgstr "Československé filmy do roku 1992."
+
+msgctxt "#32411"
+msgid "Czech and Slovak films since 1993."
+msgstr "České a slovenské filmy od roku 1993."
+
+msgctxt "#32412"
+msgid "Films with religious themes."
+msgstr "Filmy s náboženskou tematikou."
+
+msgctxt "#32413"
+msgid "Thematic lists"
+msgstr "Tematické zoznamy"
+
+msgctxt "#32415"
+msgid "You can search for any combination of:\n[B]Titles[/B], [B]Years[/B], [B]Studios[/B], [B]Actors[/B], [B]Roles[/B], [B]Authors[/B], [B]Directors[/B]\n\nExamples:\n[I]it 2017[/I]\n[I]tarantino thurman[/I]\n[I]marvel thanos 2019[/I]\n[I]brad pitt dicaprio[/I]"
+msgstr "Môžete vyhľadať akúkoľvek kombináciu:\n[B]Názvov[/B], [B]Rokov[/B], [B]Štúdií[/B], [B]Hercov[/B], [B]Rolí[/B], [B]Autorov[/B], [B]Režisérov[/B]\n\nPríklady:\n[I]it 2017[/I]\n[I]tarantino thurman[/I]\n[I]marvel thanos 2019[/I]\n[I]brad pitt dicaprio[/I]"
+
+msgctxt "#32416"
+msgid "Update finished"
+msgstr "Aktualizácia dokončená"
+
+msgctxt "#32417"
+msgid "Plugin was updated to version {0}"
+msgstr "Doplnok bol aktualizovaný na verziu {0}"
+
+msgctxt "#32418"
+msgid "Continue Watching"
+msgstr "Pokračovať v sledovaní"
+
+msgctxt "#32419"
+msgid "Show Dolby Vision streams"
+msgstr "Zobraziť Dolby Vision streamy"
+
+msgctxt "#32420"
+msgid "Show [B]Main Menu[/B] navigation"
+msgstr "Zobraziť navigáciu [B]Hlavné menu[/B]"
+
+msgctxt "#32421"
+msgid "Select episode"
+msgstr "Vybrať epizódu"
+
+msgctxt "#32422"
+msgid "movie"
+msgstr "film"
+
+msgctxt "#32423"
+msgid "tvshow"
+msgstr "televízna relácia"
+
+msgctxt "#32424"
+msgid "season"
+msgstr "séria"
+
+msgctxt "#32425"
+msgid "episode"
+msgstr "epizóda"
+
+msgctxt "#32426"
+msgid "Anime"
+msgstr "Anime"
+
+msgctxt "#32427"
+msgid "War"
+msgstr "Vojnový"
+
+msgctxt "#32428"
+msgid "Recently added streams"
+msgstr "Posledné pridané streamy"
+
+msgctxt "#32429"
+msgid "New released episodes"
+msgstr "Nové epizódy"
+
+msgctxt "#32450"
+msgid "Search on Webshare"
+msgstr "Hľadať na Webshare"
+
+msgctxt "#32451"
+msgid "Glory to Ukraine!"
+msgstr "Слава Україні!"
+
+msgctxt "#32313"
+msgid "Pride month"
+msgstr "Mesiac hrdosti"
+
+msgctxt "#32314"
+msgid "The concept of Pride Month began with the Stonewall Riots, a series of gay liberation protests that took place starting on June 28, 1969."
+msgstr "Koncept mesiaca hrdosti vznikol v súvislosti so Stonewallskými nepokojmi, sériou protestov za oslobodenie homosexuálov, ktoré sa začali 28. júna 1969."
+
+
+msgctxt "#32471"
+msgid "Unsupported Kodi version"
+msgstr "Nepodporovaná verzia Kodi"
+
+msgctxt "#32472"
+msgid "Update to the latest version of Kodi to play the trailer"
+msgstr "Aktualizujte Kodi na najnovšiu verziu, aby ste mohli prehrať trailer"
+
+msgctxt "#32473"
+msgid "Player"
+msgstr "Prehrávač"
+
+msgctxt "#32474"
+msgid "Set original audio track if available"
+msgstr "Nastaviť pôvodnú zvukovú stopu, ak je k dispozícii"
+
+msgctxt "#32475"
+msgid "Add player"
+msgstr "Pridať prehrávač"
+
+msgctxt "#32476"
+msgid "External player name"
+msgstr "Názov externého prehrávača"
+
+msgctxt "#32477"
+msgid "External player path"
+msgstr "Cesta k externému prehrávaču"
+
+msgctxt "#32478"
+msgid "Enter path"
+msgstr "Zadat cestu"
+
+msgctxt "#32479"
+msgid "Browse"
+msgstr "Prehľadávať"
+
+msgctxt "#32480"
+msgid "Enter the path manually or select it by browsing the directories. On systems like Android, just enter the app name in the format [B]com.brouken.player[/B]."
+msgstr "Zadajte cestu manuálne alebo ju vyberte prehľadávaním adresárov. V systémoch ako Android stačí zadať názov aplikácie vo formáte [B]com.brouken.player[/B]."
+
+msgctxt "#32481"
+msgid "Remove player"
+msgstr "Odstrániť prehrávač"
+
+msgctxt "#32482"
+msgid "External players"
+msgstr "Externé prehrávače"
+
+msgctxt "#32483"
+msgid "List"
+msgstr "Zoznam"
+
+msgctxt "#32484"
+msgid "Video cache memory size"
+msgstr "Veľkosť vyrovnávacej pamäte videa"
+
+msgctxt "#32485"
+msgid "Available memory"
+msgstr "Dostupná pamäť"
+
+msgctxt "#32486"
+msgid "[COLOR red]Restart[/COLOR]"
+msgstr "[COLOR red]Reštartovať[/COLOR]"
+
+msgctxt "#32487"
+msgid "[COLOR red]Shutdown[/COLOR]"
+msgstr "[COLOR red]Vypnúť[/COLOR]"
+
+msgctxt "#32488"
+msgid "You need to restart the application for the changes to take effect."
+msgstr "Aby sa zmeny prejavili, musíte aplikáciu reštartovať."
+
+msgctxt "#32489"
+msgid "Restart needed"
+msgstr "Potrebný reštart"
+
+msgctxt "#32490"
+msgid "Set memory"
+msgstr "Nastavená pameť"
+
+msgctxt "#32491"
+msgid "Set active player"
+msgstr "Nastaviť aktívny prehrávač"
+
+msgctxt "#32492"
+msgid "Active player"
+msgstr "Aktívny prehrávač"
+
+msgctxt "#32493"
+msgid "Choose a player"
+msgstr "Vyberte aktívny prehrávač"
+
+msgctxt "#32494"
+msgid "Default"
+msgstr "Predvolený"
+
+msgctxt "#32500"
+msgid "Fastshare.cz"
+msgstr ""
+
+msgctxt "#32501"
+msgid "Log in to Fastshare"
+msgstr "Prihlásiť sa k Fastshare"
+
+msgctxt "#32502"
+msgid "Show Fastshare streams ({count})"
+msgstr "Zobraziť Fastshare streamy ({count})"
+
+msgctxt "#32503"
+msgid "Show Webshare streams ({count})"
+msgstr "Zobraziť Webshare streamy ({count})"
+
+msgctxt "#32504"
+msgid "Fastshare login failed"
+msgstr "Prihlásenie k Fastshare zlyhalo"
+
+msgctxt "#32505"
+msgid "Fastshare stream is not available"
+msgstr "Fastshare stream nie je dostupný"
+
+msgctxt "#32506"
+msgid "Switch stream provider"
+msgstr "Prepnúť poskytovateľa streamov"
