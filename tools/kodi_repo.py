@@ -93,7 +93,7 @@ def cmd_build(a):
 
 
 def cmd_repo_addon(a):
-    base = f"https://{a.token}@raw.githubusercontent.com/{a.owner}/{a.repo}/{a.branch}"
+    base = f"https://{a.owner}:{a.token}@raw.githubusercontent.com/{a.owner}/{a.repo}/{a.branch}"
     xml = f'''<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="{REPO_ID}" name="SCC privátní repozitář" version="{a.version}" provider-name="Jiří">
     <extension point="xbmc.addon.repository" name="SCC privátní repozitář">
