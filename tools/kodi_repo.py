@@ -4,9 +4,9 @@
   python tools/kodi_repo.py build --out DIR
       přidá ZIP aktuální verze doplňku do DIR a přegeneruje addons.xml + md5
 
-  python tools/kodi_repo.py repo-addon [--token TOKEN] [--out repository.zip]
-      vyrobí instalační ZIP repozitářového doplňku (token je v něm zapečený,
-      proto se nikdy necommituje – generuje se lokálně)
+  python tools/kodi_repo.py repo-addon [--base URL] [--out repository.zip]
+      vyrobí instalační ZIP repozitářového doplňku (výchozí adresa je GitHub Pages
+      repa AnrielK/repository.anrielK)
 
 Jen standardní knihovna.
 """
@@ -23,6 +23,7 @@ EXCLUDE_FILES = {"dev-requirements.txt", ".gitignore", ".gitattributes"}
 EXCLUDE_RE = re.compile(r"^addon\d+\.xml$|\.pyc$")  # addon16..21.xml jsou jen šablony
 
 REPO_ID = "repository.scc-private"
+DEFAULT_BASE = "https://anrielk.github.io/repository.anrielK"  # GitHub Pages repa AnrielK/repository.anrielK
 
 
 def read_meta(xml_text):
@@ -112,11 +113,11 @@ def cmd_build(a):
 
 
 def cmd_repo_addon(a):
-    if a.base:
-        base = a.base.rstrip("/")
-    else:
-        cred = f"{a.owner}:{a.token}@" if a.token else ""
+    if a.token:  # token => privátní raw URL (starší varianta)
+        cred = f"{a.owner}:{a.token}@"
         base = f"https://{cred}raw.githubusercontent.com/{a.owner}/{a.repo}/{a.branch}"
+    else:
+        base = a.base.rstrip("/")
     xml = f'''<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="{REPO_ID}" name="SCC privátní repozitář" version="{a.version}" provider-name="Jiří">
     <extension point="xbmc.addon.repository" name="SCC privátní repozitář">
@@ -149,9 +150,9 @@ def main():
     r.add_argument("--owner", default="AnrielK")
     r.add_argument("--repo", default="plugin.video.stream-cinema-2")
     r.add_argument("--branch", default="kodi-repo")
-    r.add_argument("--base", default="", help="vlastní základní URL, např. https://anrielk.github.io/plugin.video.stream-cinema-2 (GitHub Pages)")
-    r.add_argument("--version", default="1.0.0")
-    r.add_argument("--out", default=f"{REPO_ID}-1.0.0.zip")
+    r.add_argument("--base", default=DEFAULT_BASE, help="vlastní základní URL, např. https://anrielk.github.io/plugin.video.stream-cinema-2 (GitHub Pages)")
+    r.add_argument("--version", default="1.2.0")
+    r.add_argument("--out", default=f"{REPO_ID}-1.2.0.zip")
     r.set_defaults(fn=cmd_repo_addon)
     a = ap.parse_args()
     a.fn(a)

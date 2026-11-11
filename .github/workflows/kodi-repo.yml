@@ -1,34 +1,31 @@
 name: Publish Kodi repo
 
-# Po každém pushi do main sestaví ZIP + addons.xml a nahraje je do větve kodi-repo.
-# Kodi nabídne aktualizaci jen když zvýšíš version v addon.xml.
+# Po každém pushi do main sestaví ZIPy + addons.xml a nahraje je do veřejného repa
+# AnrielK/repository.anrielK (GitHub Pages). Kodi nabídne aktualizaci jen když
+# zvýšíš version v addon.xml.
+# Vyžaduje secret KODI_REPO_TOKEN (fine-grained PAT, Contents: Read and write
+# pro repository.anrielK).
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
   publish:
     runs-on: ubuntu-latest
+    env:
+      TARGET: AnrielK/repository.anrielK
     steps:
       - uses: actions/checkout@v4
         with:
           path: src
 
-      - name: Připrav větev kodi-repo
+      - name: Stáhni cílové repo
         env:
-          GH_TOKEN: ${{ github.token }}
-          REPO: ${{ github.repository }}
+          KODI_REPO_TOKEN: ${{ secrets.KODI_REPO_TOKEN }}
         run: |
-          mkdir repo && cd repo
-          git init -q -b kodi-repo
-          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git"
-          if git fetch --depth=1 origin kodi-repo; then
-            git checkout -q -B kodi-repo FETCH_HEAD
-          fi
+          test -n "$KODI_REPO_TOKEN" || { echo "Chybí secret KODI_REPO_TOKEN"; exit 1; }
+          git clone "https://x-access-token:${KODI_REPO_TOKEN}@github.com/${TARGET}.git" repo
 
       - name: Sestav repozitář
         run: python3 src/tools/kodi_repo.py build --out repo
@@ -41,4 +38,4 @@ jobs:
           VERSION=$(grep -m1 -o '<addon [^>]*version="[^"]*"' ../src/addon.xml | sed 's/.*version="//;s/"//')
           git -c user.name="github-actions" -c user.email="actions@users.noreply.github.com" \
             commit -q -m "Publish ${VERSION}"
-          git push origin kodi-repo
+          git push origin HEAD
