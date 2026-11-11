@@ -4,7 +4,7 @@
   python tools/kodi_repo.py build --out DIR
       přidá ZIP aktuální verze doplňku do DIR a přegeneruje addons.xml + md5
 
-  python tools/kodi_repo.py repo-addon --token TOKEN [--out repository.zip]
+  python tools/kodi_repo.py repo-addon [--token TOKEN] [--out repository.zip]
       vyrobí instalační ZIP repozitářového doplňku (token je v něm zapečený,
       proto se nikdy necommituje – generuje se lokálně)
 
@@ -93,7 +93,8 @@ def cmd_build(a):
 
 
 def cmd_repo_addon(a):
-    base = f"https://{a.owner}:{a.token}@raw.githubusercontent.com/{a.owner}/{a.repo}/{a.branch}"
+    cred = f"{a.owner}:{a.token}@" if a.token else ""
+    base = f"https://{cred}raw.githubusercontent.com/{a.owner}/{a.repo}/{a.branch}"
     xml = f'''<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="{REPO_ID}" name="SCC privátní repozitář" version="{a.version}" provider-name="Jiří">
     <extension point="xbmc.addon.repository" name="SCC privátní repozitář">
@@ -112,7 +113,7 @@ def cmd_repo_addon(a):
     out = Path(a.out)
     with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
         z.writestr(f"{REPO_ID}/addon.xml", xml)
-    print(f"OK: {out}  (obsahuje token – nesdílej a necommituj)")
+    print(f"OK: {out}" + ("  (obsahuje token – nesdílej a necommituj)" if a.token else ""))
 
 
 def main():
@@ -122,7 +123,7 @@ def main():
     b.add_argument("--out", required=True)
     b.set_defaults(fn=cmd_build)
     r = sub.add_parser("repo-addon")
-    r.add_argument("--token", required=True)
+    r.add_argument("--token", default="", help="jen u privátního repa; u veřejného vynech")
     r.add_argument("--owner", default="AnrielK")
     r.add_argument("--repo", default="plugin.video.stream-cinema-2")
     r.add_argument("--branch", default="kodi-repo")
