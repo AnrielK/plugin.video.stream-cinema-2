@@ -2,11 +2,11 @@
 """Sestaví Kodi repozitář (zips/ + addons.xml + addons.xml.md5) z tohoto doplňku.
 
   python tools/kodi_repo.py build --out DIR
-      přidá ZIP aktuální verze doplňku do DIR a přegeneruje addons.xml + md5
+      přidá ZIP aktuální verze doplňku (+ ZIPy z extras/ a repozitářový doplněk)
+      do DIR a přegeneruje addons.xml + md5
 
-  python tools/kodi_repo.py repo-addon [--base URL] [--out repository.zip]
-      vyrobí instalační ZIP repozitářového doplňku (výchozí adresa je GitHub Pages
-      repa AnrielK/repository.anrielK)
+  python tools/kodi_repo.py repo-addon [--base URL] [--out FILE]
+      vyrobí jen instalační ZIP repozitářového doplňku
 
 Jen standardní knihovna.
 """
@@ -18,12 +18,14 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-EXCLUDE_DIRS = {".git", ".github", "tools", "__pycache__", ".idea", ".vscode"}
-EXCLUDE_FILES = {"dev-requirements.txt", ".gitignore", ".gitattributes"}
-EXCLUDE_RE = re.compile(r"^addon\d+\.xml$|\.pyc$")  # addon16..21.xml jsou jen šablony
+EXCLUDE_DIRS = {".git", ".github", "tools", "extras", "__pycache__", ".idea", ".vscode"}
+EXCLUDE_FILES = {"dev-requirements.txt", ".gitignore", ".gitattributes", "Readme.md", "README.md"}
+EXCLUDE_RE = re.compile(r"^addon\d+\.xml$|\.pyc$")
 
-REPO_ID = "repository.scc-private"
-DEFAULT_BASE = "https://anrielk.github.io/repository.anrielK"  # GitHub Pages repa AnrielK/repository.anrielK
+REPO_ID = "repository.anrielK"
+REPO_VERSION = "1.0.0"
+# GitHub Pages repa AnrielK/repository.anrielK
+DEFAULT_BASE = "https://anrielk.github.io/repository.anrielK"
 
 
 def read_meta(xml_text):
@@ -38,6 +40,12 @@ def vkey(v):
 
 def strip_decl(xml_text):
     return re.sub(r"^\s*<\?xml[^>]*\?>\s*", "", xml_text).strip()
+
+
+def read_meta_from_zip(path):
+    with zipfile.ZipFile(path) as z:
+        name = next(n for n in z.namelist() if n.endswith("/addon.xml") and n.count("/") == 1)
+        return read_meta(z.read(name).decode("utf-8"))
 
 
 def build_zip(out):
@@ -79,6 +87,41 @@ def add_extras(out):
         print(f"OK: {target.relative_to(out)} (extras)")
 
 
+def repo_addon_xml(base, version=REPO_VERSION):
+    base = base.rstrip("/")
+    return f'''<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="{REPO_ID}" name="AnrielK repozitář" version="{version}" provider-name="AnrielK">
+    <extension point="xbmc.addon.repository" name="AnrielK repozitář">
+        <dir>
+            <info compressed="false">{base}/addons.xml</info>
+            <checksum>{base}/addons.xml.md5</checksum>
+            <datadir zip="true">{base}/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>AnrielK repozitář (Stream Cinema Community)</summary>
+        <platform>all</platform>
+    </extension>
+</addon>
+'''
+
+
+def write_repo_addon_zip(path, base):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with zipfile.ZipFile(path, "w", zipfile.ZIP_DEFLATED) as z:
+        z.writestr(f"{REPO_ID}/addon.xml", repo_addon_xml(base))
+
+
+def add_repo_addon(out, base):
+    """Repozitářový doplněk jde i do repozitáře (samoaktualizace) a jako ZIP do kořene ke stažení."""
+    name = f"{REPO_ID}-{REPO_VERSION}.zip"
+    write_repo_addon_zip(out / "zips" / REPO_ID / name, base)
+    for old in out.glob("repository.*.zip"):
+        old.unlink()
+    write_repo_addon_zip(out / name, base)
+    print(f"OK: {name} (repozitářový doplněk)")
+
+
 def generate_index(out):
     parts = []
     for d in sorted((out / "zips").iterdir()):
@@ -96,47 +139,21 @@ def generate_index(out):
         hashlib.md5(body.encode("utf-8")).hexdigest(), encoding="utf-8")
 
 
-def read_meta_from_zip(path):
-    with zipfile.ZipFile(path) as z:
-        name = next(n for n in z.namelist() if n.endswith("/addon.xml") and n.count("/") == 1)
-        return read_meta(z.read(name).decode("utf-8"))
-
-
 def cmd_build(a):
     out = Path(a.out).resolve()
     out.mkdir(parents=True, exist_ok=True)
     z = build_zip(out)
     add_extras(out)
+    add_repo_addon(out, a.base)
     generate_index(out)
     (out / ".nojekyll").write_text("", encoding="utf-8")
     print(f"OK: {z.relative_to(out)}  ->  addons.xml, addons.xml.md5")
 
 
 def cmd_repo_addon(a):
-    if a.token:  # token => privátní raw URL (starší varianta)
-        cred = f"{a.owner}:{a.token}@"
-        base = f"https://{cred}raw.githubusercontent.com/{a.owner}/{a.repo}/{a.branch}"
-    else:
-        base = a.base.rstrip("/")
-    xml = f'''<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="{REPO_ID}" name="SCC privátní repozitář" version="{a.version}" provider-name="Jiří">
-    <extension point="xbmc.addon.repository" name="SCC privátní repozitář">
-        <dir>
-            <info compressed="false">{base}/addons.xml</info>
-            <checksum>{base}/addons.xml.md5</checksum>
-            <datadir zip="true">{base}/zips/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Privátní repozitář pro Stream Cinema (aktualizace z GitHubu)</summary>
-        <platform>all</platform>
-    </extension>
-</addon>
-'''
     out = Path(a.out)
-    with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
-        z.writestr(f"{REPO_ID}/addon.xml", xml)
-    print(f"OK: {out}" + ("  (obsahuje token – nesdílej a necommituj)" if a.token else ""))
+    write_repo_addon_zip(out, a.base)
+    print(f"OK: {out}")
 
 
 def main():
@@ -144,15 +161,11 @@ def main():
     sub = ap.add_subparsers(dest="cmd", required=True)
     b = sub.add_parser("build")
     b.add_argument("--out", required=True)
+    b.add_argument("--base", default=DEFAULT_BASE)
     b.set_defaults(fn=cmd_build)
     r = sub.add_parser("repo-addon")
-    r.add_argument("--token", default="", help="jen u privátního repa; u veřejného vynech")
-    r.add_argument("--owner", default="AnrielK")
-    r.add_argument("--repo", default="plugin.video.stream-cinema-2")
-    r.add_argument("--branch", default="kodi-repo")
-    r.add_argument("--base", default=DEFAULT_BASE, help="vlastní základní URL, např. https://anrielk.github.io/plugin.video.stream-cinema-2 (GitHub Pages)")
-    r.add_argument("--version", default="1.2.0")
-    r.add_argument("--out", default=f"{REPO_ID}-1.2.0.zip")
+    r.add_argument("--base", default=DEFAULT_BASE)
+    r.add_argument("--out", default=f"{REPO_ID}-{REPO_VERSION}.zip")
     r.set_defaults(fn=cmd_repo_addon)
     a = ap.parse_args()
     a.fn(a)

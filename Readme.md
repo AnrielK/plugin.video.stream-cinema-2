@@ -1,29 +1,14 @@
-# Stream Cinema Community
+# plugin.video.stream-cinema-2
 
-### Platformy
-|      | 16 | 17 | 18 | 19 |
-|-|:-:|:-:|:-:|:-:|
-|**Windows 10** |  ✅ |  ✅ |  ✅ |  ✅ |
-| **Android 4+** |  ✅  |  ✅  |  ✅  |  ✅  |
-|**Linux** |  ✅  |  ✅  |  ✅  |  ✅  |
-| **CoreELEC** |  ✅  |  ✅  |  ✅  |  ✅  |
-| **LibreELEC** |  ✅  |  ✅  |  ✅  |  ✅  |
-| **macOS** | ❔   |  ❔  |  ✅  |  ✅  |
-|**iOS 13+**|  ❌  |  ❌  |  ✅  |  ✅  |
-| **tvOS** | ❌   |  ❌  |  ❌  |  ✅  |
+Zdrojový kód Kodi doplňku Stream Cinema Community (fork, GPL 2.0).
 
+## Vydání nové verze
+1. Zvyš `version` v `addon.xml`.
+2. Push do `main` – workflow `.github/workflows/kodi-repo.yml` sestaví ZIPy a nahraje je do
+   veřejného repozitáře [AnrielK/repository.anrielK](https://github.com/AnrielK/repository.anrielK)
+   (GitHub Pages). Kodi pak nabídne aktualizaci.
 
+Secret `KODI_REPO_TOKEN`: fine-grained token s Contents: Read and write pro `repository.anrielK`.
 
-## Development
-
-### General
-
-- It's a good idea to utilize [virtualenv](https://virtualenv.pypa.io/en/stable/) for your local development.
-
-### Install dependencies
-
-For better intellisense (if your editor supports that) install necessary python modules via:
-
-```bash
-pip install -r dev-requirements.txt
-```
+Závislosti dodávané z repozitáře (např. `script.module.yt-dlp`) leží jako hotové ZIPy v `extras/`.
+Lokální sestavení: `python tools/kodi_repo.py build --out /tmp/repo`.
