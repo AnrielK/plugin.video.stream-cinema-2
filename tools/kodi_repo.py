@@ -61,6 +61,23 @@ def build_zip(out):
     return zpath
 
 
+def add_extras(out):
+    """Přidá hotové ZIPy doplňků z extras/ (např. závislosti). Složku v ZIPu přejmenuje na id doplňku."""
+    for src in sorted((ROOT / "extras").glob("*.zip")):
+        with zipfile.ZipFile(src) as zin:
+            names = [n for n in zin.namelist() if not n.endswith("/")]
+            top = names[0].split("/")[0]
+            xml = zin.read(f"{top}/addon.xml").decode("utf-8")
+            addon_id, version = read_meta(xml)
+            dest = out / "zips" / addon_id
+            dest.mkdir(parents=True, exist_ok=True)
+            target = dest / f"{addon_id}-{version}.zip"
+            with zipfile.ZipFile(target, "w", zipfile.ZIP_DEFLATED) as zout:
+                for n in names:
+                    zout.writestr(f"{addon_id}/{n.split('/', 1)[1]}", zin.read(n))
+        print(f"OK: {target.relative_to(out)} (extras)")
+
+
 def generate_index(out):
     parts = []
     for d in sorted((out / "zips").iterdir()):
@@ -88,6 +105,7 @@ def cmd_build(a):
     out = Path(a.out).resolve()
     out.mkdir(parents=True, exist_ok=True)
     z = build_zip(out)
+    add_extras(out)
     generate_index(out)
     (out / ".nojekyll").write_text("", encoding="utf-8")
     print(f"OK: {z.relative_to(out)}  ->  addons.xml, addons.xml.md5")
