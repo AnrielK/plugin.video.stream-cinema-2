@@ -137,6 +137,7 @@ class FILTER:
     NUMBERING = 'numbering'
     NUMBERING_ID = 'numbering_id'
     CONCERT = 'concert'
+    TAG = 'tag'
 
 
 class COUNT:

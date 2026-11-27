@@ -2,7 +2,7 @@ import re
 
 from resources.lib.api.api import API
 from resources.lib.api.trakt_api import trakt, TraktAPI
-from resources.lib.const import HTTP_METHOD, COMMAND, ICON, LANG, MEDIA_SERVICE, MEDIA_TYPE, ROUTE, SETTINGS, STRINGS, \
+from resources.lib.const import TRAKT_LIST, HTTP_METHOD, COMMAND, ICON, LANG, MEDIA_SERVICE, MEDIA_TYPE, ROUTE, SETTINGS, STRINGS, \
     GENERAL
 from resources.lib.gui.directory_items import DirectoryItem
 from resources.lib.gui.renderers.directory_renderer import DirectoryRenderer
@@ -121,8 +121,29 @@ class TraktRenderer(DirectoryRenderer):
                     icon=get_icon(ICON.TRAKT_LIST_TRENDING)
                 )(handle)
 
+    @staticmethod
+    def thematic_tag(user, id):
+        """Klíč tematického seznamu (media.tags v SCC DB) pro Trakt seznam, jinak None."""
+        for name in dir(TRAKT_LIST):
+            value = getattr(TRAKT_LIST, name)
+            if isinstance(value, dict) and value.get('user') == user and value.get('id') == id:
+                if name == 'CHRISTMAS_CZECH':
+                    return 'christmas'
+                return name.lower()
+        return None
+
     def list(self, handle, route, user=None, id=None):
         logger.debug('/user %s, slug: %s' % (user, id))
+        # Tematické seznamy se berou primárně z vlastní DB (tagy), Trakt je záloha.
+        tag = self.thematic_tag(user, id)
+        if tag:
+            try:
+                res, _ = self.sc.search_api_request(API.FILTER.tag(MEDIA_TYPE.ALL, tag))
+                if res and res.get('total'):
+                    self.sc.render_media(handle, route, res, title_renderer=MediaInfoRenderer.TITLE.mixed)
+                    return
+            except Exception as e:
+                logger.error('Tematický seznam %s z API selhal: %s' % (tag, e))
         items = trakt.list_items(user=user, id=id)
         if not items:
             DirectoryRenderer.end_directory(handle)
