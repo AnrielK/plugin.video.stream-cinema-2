@@ -321,6 +321,16 @@ class API(object):
             })
 
         @staticmethod
+        def tag(media_type, tag):
+            # Tematické seznamy uložené v SCC DB (media.tags)
+            return API.URL.media_filter(FILTER.TAG, {
+                QUERY.VALUE: tag,
+                QUERY.TYPE: media_type,
+                QUERY.SORT: SORT.POPULARITY,
+                QUERY.ORDER: ORDER.DESCENDING,
+            })
+
+        @staticmethod
         def service(media_type, service_name, service_ids, limit=True):
             return API.URL.media_filter(FILTER.SERVICE, {
                 QUERY.SERVICE: service_name,
